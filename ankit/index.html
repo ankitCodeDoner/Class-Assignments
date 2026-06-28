@@ -99,6 +99,623 @@
 
         // let run = parseInt(prompt("Enter Your Score"));
         // console.log(run >= 100 ? "Century Scored" : "Need more runs for Century");
+
+    // 16. Check if a given temperature is above freezing (0°C) 
+    // Input: -5°C 
+    // Output: Below Freezing
+
+        // let temp = parseInt(prompt("Enter Temperature")); 
+        // console.log(temp >0 ? "freezing" : "Below Freezing");
+
+    // 17. Check if an integer is a power of 2 
+    // Input: 8
+    // Output: Power of 2
+
+        // let num = parseInt(prompt("Enter Integer Number"));
+        // console.log((num > 0 && (num & (num - 1)) === 0 ) ? "Power of 2" : "NOT a Power of 2");
+
+    // 18. Check if a number is positive or negative
+    // Input: 5 
+    // Output: Positive number
+    // Input: -3
+    // Output: Negative number
+
+        // let num = parseInt(prompt("Enter a Number"));
+        // console.log( num > 0 ?"number is positive" :"number is negative");
+
+    // 19. Check if a user is a minor or an adult (age ≥ 18 is adult) 
+
+        // let age = parseInt(prompt("Enter your Age"));
+        // console.log(age >= 18 ? "Your are Adult" : "Your are Child");
+
+    // 20. Check if a temperature is above or below 30°C 
+    // Input: 25°C
+    // Output: Cold Weather 
+    // Input: 35°C 
+    // Output: Hot Weather
+
+        // let temp = parseInt(prompt("Enter Room Temperature"));
+        // console.log(temp >= 30 ? "Hot Weather" : "Cold Weather");
+
+    // 21. Check if a user can log in (correct password is "admin123")
+    // Input: "admin123"
+    // Output: Access Granted 
+    // Input: "password" 
+    // Output: Access Denied 
+
+        // let psw = prompt("Enter Password");
+        // console.log(psw === "admin123" ? "Access Granted" : "Access Denied");
+
+    // 22. Check if a year is a leap year . 
+    // Input: 2024
+    // Output: Leap Year
+    // Input: 2023
+    // Output: Not a Leap Year 
+
+        // let year = parseInt(prompt("Enter Year"));
+        // console.log(year % 4 == 0 ? "Leap Year" : "NOT Leap Year");
+
+    // 23. Check if a letter is a vowel or consonant
+    // Input: 'A' Output: Vowel
+    // Input: 'B' Output: Consonant
+
+        // let str = prompt("Enter a Letter");
+        // console.log(str == 'a' || str == 'e' || str == 'i' || str == 'o' || str == 'u' ? "Vowel" : "Consonant");
+
+    // 24. Check if an ATM withdrawal is possible (balance check) 
+    // Input: Balance: 500, Withdrawal: 300 
+    // Output: Transaction Successful 
+    // Input: Balance: 200, Withdrawal: 500 
+    // Output: Insufficient Balance
+
+        // let balance = parseInt(prompt("Enter Balance"));
+        // let withdrawal = parseInt(prompt("Enter Withdrawal Amount"));
+
+        // console.log(balance >= withdrawal ? "Transaction Successful" : "Insufficient Balanc");
+
+    // 27. Check if a user is eligible for a discount (purchase > 1000) 
+    // Input: Purchase: 1500 
+    // Output: Eligible for Discount 
+    // Input: Purchase: 800 
+    // Output: Not Eligible for Discount 
+    
+        // let num = parseInt(prompt("Enter Shopping money"));
+        // switch(num >= 1000){
+        //     case true: 
+        //         console.log("Eligible for Discount.");
+        //         break;
+        //     case false: 
+        //         console.log("Not Eligible for Discount. Please more shopping");
+        //         break;
+        // }
+
+    // 28. Check if a number is positive, negative, or zero
+
+        // let num = parseInt(prompt("Enter any Number"));
+        // switch(true){
+        //     case (num > 0): 
+        //         console.log("Positive Number");
+        //         break;
+        //     case (num < 0): 
+        //         console.log("Negative Number");
+        //         break;
+        //     default: 
+        //         console.log("Zero");
+        // }
+
+    // 29. Check the grade based on marks
+
+        // let marks = parseInt(prompt("Enter Marks"));
+        // switch(true){
+        //     case (marks > 70): 
+        //         console.log("Grade: A");
+        //         break;
+        //     case (marks > 55 && marks <= 70): 
+        //         console.log("Grade: B");
+        //         break;
+        //     case (marks > 34 && marks<= 55): 
+        //         console.log("Grade: C");
+        //         break;
+        //     default: 
+        //         console.log("Fail")
+        // }
+
+    // 30. Check if a person is underweight, normal, or overweight based on BMI
+
+        // let weight = parseInt(prompt("Enter your BMI(Body Mass Index)"));
+        // switch(true){
+        //     case (weight < 18.5):
+        //         console.log("UnderWeight");
+        //         break;
+        //     case (weight >= 18.5 && weight <25):
+        //         console.log("Normal Weight");
+        //         break;
+        //     case (weight >= 25 && weight < 30):
+        //         console.log("OverWeight");
+        //         break;
+        //     default:
+        //         console.log("Over-Over Weight");
+        // }
+
+    // 31. Identify a triangle type based on its sides
+    // Input: Sides: 5, 5, 5 
+    // Output: Equilateral Triangle 
+    // Input: Sides: 5, 5, 3 
+    // Output: Isosceles Triangle 
+    // Input: Sides: 3, 4, 5 
+    // Output: Scalene Triangle 
+
+        // let s1 = parseInt(prompt("Enter 1st side value of Triangle"));
+        // let s2 = parseInt(prompt("Enter 2nd side value of Triangle"));
+        // let s3 = parseInt(prompt("Enter 3rd side value of Triangle"));
+
+        // switch(true){
+        //     case (s1 == s2 && s1 == s3):
+        //         console.log("Equilateral Triangle");
+        //         break;
+        //     case (s1 == s2 || s2 == s3 || s1 == s3):
+        //         console.log("Insosceles Triangle ");
+        //         break;
+        //     default:
+        //         console.log("Scalene Triangle ");
+        // }
+
+    // 32. Determine age category 
+    // Input: Age: 5 
+    // Output: Toddler 
+    // Input: Age: 12 
+    // Output: Child 
+    // Input: Age: 19 
+    // Output: Teenager 
+    // Input: Age: 30 
+    // Output: Adult 
+
+        // let age = parseInt(prompt("Enter Your Age"));
+        // switch(true){
+        //     case(age >= 20):
+        //         console.log("Adult");
+        //         break;
+        //     case(age >= 12):
+        //         console.log("Teenager");
+        //         break;
+        //     case(age >= 6):
+        //         console.log("child");
+        //         break;
+        //     default: 
+        //         console.log("Toddler");
+        // }
+
+    // 33. Check the water level in a tank 
+    // Input: Level: 10% 
+    // Output: Very Low 
+    // Input: Level: 40% 
+    // Output: Moderate 
+    // Input: Level: 80% 
+    // Output: Full 
+
+        // let water = parseInt(prompt("Enter Water level in a tank"));
+        // switch(true){
+        //     case(water>= 80): 
+        //         console.log("Full");
+        //         break;
+        //     case(water >= 40): 
+        //         console.log("Moderate");
+        //         break;
+        //     default: 
+        //         console.log("Low");
+        // }
+
+    // 34. Check the temperature range 
+    // Input: Temp: -5°C 
+    // Output: Freezing Cold 
+    // Input: Temp: 15°C 
+    // Output: Cold 
+    // Input: Temp: 28°C 
+    // Output: Warm 
+    // Input: Temp: 40°C 
+    // Output: Hot 
+
+        // let temp = parseInt(prompt("Enter temperature in Your Room"));
+        // switch(true){
+        //     case(temp>=30): 
+        //         console.log("Hot");
+        //         break;
+        //     case(temp>=25):
+        //         console.log("Warm");
+        //         break;
+        //     case(temp>= 10): 
+        //         console.log("Cold");
+        //         break;
+        //     default: 
+        //         console.log("Freezing Cold");
+        // }
+
+    // 35. Determine train ticket fare based on age 
+    // Input: Age: 5 
+    // Output: Free Ticket 
+    // Input: Age: 15 
+    // Output: Half Fare 
+    // Input: Age: 30 
+    // Output: Full Fare 
+    // Input: Age: 65 
+    // Output: Senior Citizen Discount 
+
+        // let age = parseInt(prompt("enter your age"));
+        // switch(true){
+        //     case(age >= 60):
+        //         console.log("Senior Citizen Discount");
+        //         break;
+        //     case(age >= 20):
+        //         console.log("Full Fare");
+        //         break;
+        //     case(age >= 5):
+        //         console.log("Half Fare");
+        //     default:
+        //         console.log("Free Ticket");
+        // }
+
+    // 36. Categorize mobile battery level 
+    // Input: Battery: 5% 
+    // Output: Critical - Plug in Now! 
+    // Input: Battery: 30% 
+    // Output: Low 
+    // Input: Battery: 60% 
+    // Output: Medium 
+    // Input: Battery: 90% 
+    // Output: Full 
+
+        // let battery = parseInt(prompt("Enter Mobile battery level"));
+
+        // switch(true){
+        //     case(battery>=90): 
+        //         console.log("Full");
+        //         break;
+        //     case(battery>=40): 
+        //         console.log("Medium");
+        //         break;
+        //     case(battery>=25): 
+        //         console.log("Low");
+        //         break;
+        //     default: 
+        //         console.log("Plug in Now!");
+        // }
+
+    // 37. Check work shift based on hours worked 
+    // Input: Hours: 5 
+    // Output: Part-time 
+    // Input: Hours: 8 
+    // Output: Full-time 
+    // Input: Hours: 12 
+    // Output: Overtime
+    
+        // let hours = parseInt(prompt("Enter Work Hours"));
+
+        // switch(true){
+        //     case(hours>=12): 
+        //         console.log("OverTime");
+        //         break;
+        //     case(hours>=8): 
+        //         console.log("Full-Time");
+        //         break;
+        //     default: 
+        //         console.log("Part-time");
+        // }
+
+    // 38. Check if a number is positive, and further check if it's even or odd 
+    // Input: 6 
+    // Output: Positive and Even 
+    // Input: 7 
+    // Output: Positive and Odd 
+    // Input: -4 
+    // Output: Negative Number
+    
+        // let num = parseInt(prompt("Enter any Number "));
+        // switch(true){
+        //     case(num > 0 && num % 2 == 0): 
+        //         console.log("Positive and Even");
+        //         break;
+        //     case(num > 0 && num % 2 != 0): 
+        //         console.log("Positive and Odd");
+        //         break;
+        //     default:
+        //         console.log("Negative Number");
+        // }
+
+    // 39. Check if a student has passed, and determine if they got distinction 
+    // Input: Marks: 85 
+    // Output: Passed with Distinction 
+    // Input: Marks: 50 
+    // Output: Passed 
+    // Input: Marks: 30 
+    // Output: Failed 
+
+        // let marks = parseInt(prompt("Enter marks"));
+        // switch(true){
+        //     case(marks >= 80):
+        //         console.log("Passed with Distinction");
+        //         break;
+        //     case(marks >= 36):
+        //         console.log("Passed");
+        //         break;
+        //     default: 
+        //         console.log("Failled");
+        // }
+
+    // 40. Check if a person can drive (above 18), and if they have a valid license 
+    // Input: Age: 20, License: Yes 
+    // Output: Allowed to Drive 
+    // Input: Age: 20, License: No 
+    // Output: Get a License First 
+    // Input: Age: 16, License: No 
+    // Output: Too Young to Drive 
+    
+        // let age = parseInt(prompt("Enter Age"));
+        // let str = prompt("license (Yes/No)");
+
+        // switch(true){
+        //     case(age>=18 && (str=='no'||str=='No')): 
+        //         console.log("Get a License First");
+        //         break;
+        //     case(age>=18): 
+        //         console.log("Allowed to drive");
+        //         break;
+        //     default: 
+        //         console.log("Too Young to Drive");  
+        // }
+
+    // 41. Check if a number is divisible by 5, and further check if it's also divisible by 10 
+    // Input: 50 
+    // Output: Divisible by 5 and 10 
+    // Input: 25 
+    // Output: Divisible by 5 but not 10 
+    // Input: 13 
+    // Output: Not Divisible by 5 
+    
+        // let num = parseInt(prompt("enter number"));
+        // switch(true){
+        //     case(num%5==0 && num%10==0): 
+        //         console.log("Divisible by 5 and 10");
+        //         break;
+        //     case(num%5==0 && num%10!=0): 
+        //         console.log("Divisible by 5 but not 10");
+        //         break;
+        //     default: 
+        //         console.log("NOT Divisible by 5");
+        // }
+
+    // 42. Check if an entered username is correct, and then check if the password is correct 
+    // Input: Username: "admin", Password: "pass123" 
+    // Output: Login Successful 
+    // Input: Username: "admin", Password: "wrongpass" 
+    // Output: Incorrect Password 
+    // Input: Username: "user", Password: "pass123" 
+    // Output: Incorrect Username
+    
+        // let user = prompt("enter username");
+        // let psw = prompt("enter password");
+
+        // switch(true){
+        //     case(user=='admin'&&psw=='pass123'): 
+        //         console.log("Login Successful");
+        //         break;
+        //     case(psw=='pass123'): 
+        //         console.log("Incorrect Password");
+        //         break;
+        //     default: 
+        //         console.log("Incorrect Username");
+        // }
+
+    // 43. Check if a number is positive, and then check if it's a prime number 
+    // Input: 7 
+    // Output: Positive and Prime 
+    // Input: 10 
+    // Output: Positive but Not Prime 
+    // Input: -5 
+    // Output: Negative Number 
+    
+        // let num = parseInt(prompt("enter number"));
+        // switch(true){
+        //     case(num<0): 
+        //         console.log("Negative Number");
+        //         break;
+        //     case(num ==2||num==3||num==5||num==7):
+        //         console.log("Positive and Prime Number");
+        //         break;
+        //     case(num%2==0): 
+        //         console.log("Positive but Not Prime");
+        //         break;
+        //     case(num%3==0): 
+        //         console.log("Positive but Not Prime");
+        //         break;
+        //     case(num%5==0): 
+        //         console.log("Positive but Not Prime");
+        //         break;
+        //     case(num%7==0): 
+        //         console.log("Positive but Not Prime");
+        //         break;
+        //     default: 
+        //         console.log("Positive and Prime Number");
+        // }
+
+    // 44. Check if a mobile phone is on, and if yes, check battery level 
+    // Input: Phone: On, Battery: 80% 
+    // Output: Phone On, Battery Sufficient 
+    // Input: Phone: On, Battery: 5% 
+    // Output: Phone On, Battery Low 
+    // Input: Phone: Off, Battery: 50% 
+    // Output: Phone is Off 
+
+        // let battery = parseInt(prompt("enter battery percent"));
+        // let phone = prompt("phone is On/Off");
+
+        // switch(true){
+        //     case(battery>=50&&phone=='on'):
+        //         console.log("Phone On, Battery Sufficient");
+        //         break;
+        //     case(phone!='on'): 
+        //         console.log("Phone if OFF");
+        //         break;
+        //     default: 
+        //         console.log("Phone On, Battery Low");
+        // }
+
+    // 45 Check if a number is greater than 1000, and then check if it's a multiple of 100 
+    // Input: 1500 
+    // Output: Greater than 1000 and Multiple of 100 
+    // Input: 1150 
+    // Output: Greater than 1000 but Not Multiple of 100 
+    // Input: 800 
+    // Output: Less than 1000
+    
+        // let num = parseInt(prompt("enter number"));
+        // switch(true){
+        //     case(num%100 != 0): 
+        //       console.log("Greater than 1000 but Not Multiple of 100 ");
+        //       break;
+        //     case(num>=1000&&num%100==0): 
+        //         console.log("Greater than 1000 and Multiple of 100");
+        //         break;
+        //     default: 
+        //         console.log("Less than 1000");  
+        // }
+
+    // 46. Check if a year is a leap year, and then check if it's a century year 
+    // Input: 2000 
+    // Output: Leap Year and Century Year 
+    // Input: 2024 
+    // Output: Leap Year but Not a Century Year 
+    // Input: 2019 
+    // Output: Not a Leap Year
+    
+        // let year = parseInt(prompt("Enter Year"));
+        // switch(true){
+        //     case(year%4==0 && year%100==0): 
+        //         console.log("Leap Year and Century Year");
+        //         break;
+        //     case(year%4==0 && year%100!=0): 
+        //         console.log("Leap Year but Not a Century Year");
+        //         break;
+        //     default: 
+        //         console.log("Not a Leap Year");
+        // }
+
+
+    
+    // 48. Get the day of the week based on a number 
+    // Input & Output 
+    // Input: 3 
+    // Output: Wednesday 
+    // Input: 7 
+    // Output: Sunday 
+    // Input: 9 
+    // Output: Invalid day
+
+        // let day = parseInt(prompt("Enter a Number for Days"));
+        // switch(day){
+        //     case 1:
+        //         console.log("Monday");
+        //         break;
+        //     case 2:
+        //         console.log("Tuesday");
+        //         break;
+        //     case 3:
+        //         console.log("Wednesday");
+        //         break;
+        //     case 4:
+        //         console.log("Thursday");
+        //         break; 
+        //     case 5:
+        //         console.log("Friday");
+        //         break;  
+        //     case 6:
+        //         console.log("Saturday");
+        //         break; 
+        //     case 7:
+        //         console.log("Sunday");
+        //         break;
+        //     default: 
+        //         console.log("Invalid Day");
+        // }
+
+    // 49. Get the month name based on the number 
+    // Input & Output 
+    // Input: 1 
+    // Output: January 
+    // Input: 6 
+    // Output: June 
+    // Input: 13 
+    // Output: Invalid month
+    
+        // let month = parseInt(prompt("Enter a number for Months"));
+        // switch(month){
+        //     case 1: 
+        //         console.log("January");
+        //         break;
+        //     case 2: 
+        //         console.log("February");
+        //         break;
+        //     case 3: 
+        //         console.log("March");
+        //         break;
+        //     case 4: 
+        //         console.log("April");
+        //         break;
+        //     case 5: 
+        //         console.log("May");
+        //         break;
+        //     case 6: 
+        //         console.log("June");
+        //         break;
+        //     case 7: 
+        //         console.log("July");
+        //         break;
+        //     case 8: 
+        //         console.log("August");
+        //         break;
+        //     case 9: 
+        //         console.log("September");
+        //         break;
+        //     case 10: 
+        //         console.log("October");
+        //         break;
+        //     case 11: 
+        //         console.log("November");
+        //         break;
+        //     case 12: 
+        //         console.log("December");
+        //         break;
+        //     default: 
+        //         console.log("Invalid Month");
+        // }
+
+    // 50. Check the grade based on marks range 
+    // Input & Output 
+    // Input: 92 
+    // Output: Grade A 
+    // Input: 76 
+    // Output: Grade C 
+    // Input: 35 
+    // Output: Fail 
+    
+        // let marks = parseInt(prompt("Enter Your Marks"));
+        // switch(true){
+        //     case(marks>=90): 
+        //         console.log("Grade: A");
+        //         break;
+        //     case(marks>=80 && marks<90): 
+        //         console.log("Grade: B");
+        //         break;
+        //     case(marks>=65 && marks<80): 
+        //         console.log("Grade: C");
+        //         break;
+        //     case(marks>=40 && marks<65): 
+        //         console.log("Grade: D");
+        //         break;
+        //     default: 
+        //         console.log("Fail");
+        // }
+
+    
     </script>
 </body>
 </html>
