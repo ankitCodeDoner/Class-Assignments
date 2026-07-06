@@ -60,7 +60,7 @@
     // Output: Overtime not Done
 
         // let time = parseInt(prompt("Enter works in a week on hours"));
-        // console.log(time >= 60 ? "Overtime Work" : "NOT Overtime");
+        // console.log(time > 60 ? "Overtime Work" : "NOT Overtime");
 
 
     // 10. Check if a customer is eligible for a discount . When a person spend more than 500 ruppees he is eligible for discount
@@ -68,7 +68,7 @@
     // Output: Eligible for Discount
 
         // let money = parseInt(prompt("Enter spend money in shopping"));
-        // console.log(money >= 500 ? "Eligible for Discount" : "Not Eligible for Discount");
+        // console.log(money > 500 ? "Eligible for Discount" : "Not Eligible for Discount");
 
     // 11. Check if a triangle is equilateral (all sides equal)
 
@@ -83,7 +83,7 @@
         // Output: Not Greater than 1000
 
         // let num = parseInt(prompt("Enter Number"));
-        // console.log(num >= 1000 ?"greater than 1000" :"not greater than 1000");
+        // console.log(num > 1000 ?"greater than 1000" :"not greater than 1000");
 
     // 14. Check if a car has fuel left 
         // Input: 0 liters 
@@ -180,7 +180,7 @@
     // Output: Not Eligible for Discount 
     
         // let num = parseInt(prompt("Enter Shopping money"));
-        // switch(num >= 1000){
+        // switch(num > 1000){
         //     case true: 
         //         console.log("Eligible for Discount.");
         //         break;
@@ -203,7 +203,7 @@
         //         console.log("Zero");
         // }
 
-    // 29. Check the grade based on marks
+    // 29. Check the grade based on marks       (marks > 70)=> Grade: A,  (marks > 55 && marks <= 70)=> Grade: B    (marks > 34 && marks<= 55)=> Grade: C  (marks<=34)=>  Fail
 
         // let marks = parseInt(prompt("Enter Marks"));
         // switch(true){
@@ -220,7 +220,7 @@
         //         console.log("Fail")
         // }
 
-    // 30. Check if a person is underweight, normal, or overweight based on BMI
+    // 30. Check if a person is underweight, normal, or overweight based on BMI     (weight < 18.5) => UnderWeight, (weight >= 18.5 && weight <25)=> Normal Weight   (weight >= 25 && weight < 30)=> OverWeight  (weight > 30)=> Over-Over Weight
 
         // let weight = parseInt(prompt("Enter your BMI(Body Mass Index)"));
         // switch(true){
@@ -261,13 +261,13 @@
         // }
 
     // 32. Determine age category 
-    // Input: Age: 5 
+    // Input: Age: 5            (age < 6)
     // Output: Toddler 
-    // Input: Age: 12 
+    // Input: Age: 12           (age >= 6)
     // Output: Child 
-    // Input: Age: 19 
+    // Input: Age: 19           (age >= 12)
     // Output: Teenager 
-    // Input: Age: 30 
+    // Input: Age: 30           (age >= 20)
     // Output: Adult 
 
         // let age = parseInt(prompt("Enter Your Age"));
@@ -286,11 +286,11 @@
         // }
 
     // 33. Check the water level in a tank 
-    // Input: Level: 10% 
+    // Input: Level: 10%               water < 40
     // Output: Very Low 
-    // Input: Level: 40% 
+    // Input: Level: 40%               water >= 40
     // Output: Moderate 
-    // Input: Level: 80% 
+    // Input: Level: 80%               water>= 80
     // Output: Full 
 
         // let water = parseInt(prompt("Enter Water level in a tank"));
@@ -306,13 +306,13 @@
         // }
 
     // 34. Check the temperature range 
-    // Input: Temp: -5°C 
+    // Input: Temp: -5°C            (temp< 10)
     // Output: Freezing Cold 
-    // Input: Temp: 15°C 
+    // Input: Temp: 15°C            (temp>= 10)
     // Output: Cold 
-    // Input: Temp: 28°C 
+    // Input: Temp: 28°C            (temp>=25)
     // Output: Warm 
-    // Input: Temp: 40°C 
+    // Input: Temp: 40°C            (temp>=30)
     // Output: Hot 
 
         // let temp = parseInt(prompt("Enter temperature in Your Room"));
@@ -331,14 +331,14 @@
         // }
 
     // 35. Determine train ticket fare based on age 
-    // Input: Age: 5 
-    // Output: Free Ticket 
-    // Input: Age: 15 
-    // Output: Half Fare 
-    // Input: Age: 30 
-    // Output: Full Fare 
-    // Input: Age: 65 
-    // Output: Senior Citizen Discount 
+    // Input: Age: 5                        age < 5
+    // Output: Free Ticket                      Free Ticket 
+    // Input: Age: 15                       age >= 5
+    // Output: Half Fare                        Half Fare 
+    // Input: Age: 30                       age >= 20
+    // Output: Full Fare                        Full Fare 
+    // Input: Age: 65                       age >= 60
+    // Output: Senior Citizen Discount          Senior Citizen Discount 
 
         // let age = parseInt(prompt("enter your age"));
         // switch(true){
@@ -355,14 +355,14 @@
         // }
 
     // 36. Categorize mobile battery level 
-    // Input: Battery: 5% 
+    // Input: Battery: 5%       battery<25
     // Output: Critical - Plug in Now! 
-    // Input: Battery: 30% 
+    // Input: Battery: 30%      battery>=25
     // Output: Low 
-    // Input: Battery: 60% 
-    // Output: Medium 
-    // Input: Battery: 90% 
-    // Output: Full 
+    // Input: Battery: 60%      battery>=40
+    // Output: Medium           
+    // Input: Battery: 90%      battery>=90
+    // Output: Full             
 
         // let battery = parseInt(prompt("Enter Mobile battery level"));
 
@@ -422,12 +422,12 @@
         // }
 
     // 39. Check if a student has passed, and determine if they got distinction 
-    // Input: Marks: 85 
-    // Output: Passed with Distinction 
-    // Input: Marks: 50 
-    // Output: Passed 
-    // Input: Marks: 30 
-    // Output: Failed 
+    // Input: Marks: 85                     marks >= 80     
+    // Output: Passed with Distinction      Passed with Distinction
+    // Input: Marks: 50                     marks >= 36
+    // Output: Passed                       Passed 
+    // Input: Marks: 30                     marks<36
+    // Output: Failed                       Failed
 
         // let marks = parseInt(prompt("Enter marks"));
         // switch(true){
@@ -498,7 +498,7 @@
         //     case(user=='admin'&&psw=='pass123'): 
         //         console.log("Login Successful");
         //         break;
-        //     case(psw=='pass123'): 
+        //     case(user=='admin'&&psw!='pass123'): 
         //         console.log("Incorrect Password");
         //         break;
         //     default: 
@@ -569,14 +569,15 @@
     
         // let num = parseInt(prompt("enter number"));
         // switch(true){
+        //     case(num <1000):
+        //         console.log("Less than 1000");
+        //         break;
         //     case(num%100 != 0): 
         //       console.log("Greater than 1000 but Not Multiple of 100 ");
         //       break;
-        //     case(num>=1000&&num%100==0): 
+        //     case(num>1000&&num%100==0): 
         //         console.log("Greater than 1000 and Multiple of 100");
-        //         break;
-        //     default: 
-        //         console.log("Less than 1000");  
+        //         break; 
         // }
 
     // 46. Check if a year is a leap year, and then check if it's a century year 
@@ -689,13 +690,13 @@
         // }
 
     // 50. Check the grade based on marks range 
-    // Input & Output 
-    // Input: 92 
+    // Input & Output       marks>=90  A
+    // Input: 92            marks>=80 && marks<90   B
     // Output: Grade A 
-    // Input: 76 
-    // Output: Grade C 
-    // Input: 35 
-    // Output: Fail 
+    // Input: 76            (marks>=65 && marks<80) C
+    // Output: Grade C          
+    // Input: 35            marks>=40 && marks<65   D
+    // Output: Fail         marks < 40          Fail
     
         // let marks = parseInt(prompt("Enter Your Marks"));
         // switch(true){
@@ -715,7 +716,520 @@
         //         console.log("Fail");
         // }
 
+    // 51. Identify vehicle type based on category 
+    // Input & Output 
+    // Input: "car" 
+    // Output: 4-Wheeler 
+    // Input: "bike" 
+    // Output: 2-Wheeler 
+    // Input: "bus" 
+    // Output: Heavy Vehicle
+
+        // let vehicle = prompt("Enter Vehicle Type");
+        // if(vehicle == 'car'){
+        //     console.log("4-Wheeler");
+        // }
+        // else if(vehicle == 'bike'){
+        //     console.log("2-Wheeler");
+        // }
+        // else if(vehicle == 'bus'){
+        //    console.log("heavy Vehicle");
+        // }
+        // else{
+        //      console.log("other")
+        // }
+
+    // 53. Get the currency symbol based on country 
+    // Input & Output 
+    // Input: "India" 
+    // Output: ₹ 
+    // Input: "USA" 
+    // Output: $ 
+    // Input: "Japan" 
+    // Output: ¥ 
+
+        // let country = prompt("Enter Country Name");
+        // if(country=='India' || country=='india'){
+        //     console.log("Currency : ₹");
+        // }
+        // else if(country=='USA'){
+        //     console.log("Currency : $");
+        // }
+        // else if(country=='Japan'){
+        //     console.log("¥");
+        // }
+        // else{
+        //      console.log("Other")
+        // }
+
+    // 54. Identify a programming language category 
+    // Input & Output 
+    // Input: "C" 
+    // Output: Procedural Language 
+    // Input: "Python" 
+    // Output: Scripting Language 
+    // Input: "Java" 
+    // Output: Object-Oriented Language 
+
+        // let lan = prompt("Enter Programming Language Name");
+        // if(lan == 'C'){
+        //     console.log("Procedural Language");
+        // }
+        // else if(lan=='Python'){
+        //     console.log("Scripting Language");
+        // }
+        // else if(lan=='Java'){
+        //     console.log("Object-Oriented Language")
+        // }
+        // else{
+        //     console.log("Findding this Programming Language");
+        // }
+
+    // 55. Check the traffic light signal meaning 
+    // Input & Output 
+    // Input: "Red" 
+    // Output: Stop 
+    // Input: "Yellow" 
+    // Output: Ready 
+    // Input: "Green" 
+    // Output: Go
+
+        // let light = prompt("Enter Traffic Light Color");
+        // if(light == 'Red'){
+        //     console.log("Stop");
+        // }
+        // else if(light == 'Yellow'){
+        //     console.log("Ready");
+        // }
+        // else if(light == 'Green'){
+        //     console.log("Go");
+        // }
+        // else{
+        //     console.log("Input Wrong");
+        // }
+
+    // 56. Identify device category 
+    // Input & Output 
+    // Input: "Laptop" 
+    // Output: Computing Device 
+    // Input: "Mobile" 
+    // Output: Communication Device 
+    // Input: "TV" 
+    // Output: Entertainment Device 
+
+        // let device = prompt("Enter Device Category");
+        // if(device=='Laptop'){
+        //     console.log("Computing Device");
+        // }
+        // else if(device=='Mobile'){
+        //     console.log("Communication Device");
+        // }
+        // else if(device=='TV'){
+        //     console.log("Entertainment Device");
+        // }
+        // else{
+        //     console.log("Electric Device");
+        // }
+
+    // 57. Check if a person is eligible to vote. 
+    // A person can vote only if they are at least 18 years old and have a valid voter ID. 
+    // Input: Age: 20, Voter ID: Yes → Output: Eligible to vote 
+    // Input: Age: 17, Voter ID: Yes → Output: Not eligible to vote
     
-    </script>
+        // let age = parseInt(prompt("Enter Your Age"));
+        // let voter = prompt("Enter Your Voter ID (YES/NO)");
+        // if(age>=18&&(voter=='YES'||voter=='yes'||voter=='Yes')){
+        //     console.log("Eligible to vote");
+        // }
+        // else if(age<18&&(voter=='YES'||voter=='yes'||voter=='Yes')){
+        //     console.log("NOT Eligible to vote");
+        // }
+        // else{
+        //     console.log("Please Renew Voter ID");
+        // }
+
+    // 58. Check if a student passes the semester. 
+    // A student will pass if their marks are 40 or above in all subjects and their attendance is at least 75%. 
+    // Input: Marks: 50, Attendance: 80% → Output: Passed 
+    // Input: Marks: 50, Attendance: 70% → Output: Failed due to low attendance 
+
+        // let marks = parseInt(prompt("Enter Your marks"));
+        // let Attendance = parseInt(prompt("Enter your Attendance"));
+
+        // if(marks>=40 && Attendance>=75){
+        //     console.log("Passed");
+        // }
+        // else if(marks>=40 && Attendance<75){
+        //     console.log("Failed due to low");
+        // }
+        // else{
+        //     console.log("Failed");
+        // }
+
+    // 59. Check if a user can access a premium feature in an app. 
+    // A user can access the premium feature only if they have an active subscription and their payment is up to date. 
+    // Input: Subscription: Active, Payment: Up to Date → Output: Access granted 
+    // Input: Subscription: Active, Payment: Pending → Output: Access denied 
+    
+        // let sub = prompt("Enter Subscription (active or not)");
+        // let payment = prompt("Enter Payment (Up to Date/ Pending)");
+
+        // if(sub.toUpperCase() === "ACTIVE" && payment.toUpperCase() === "UP TO DATE"){
+        //     console.log("Access granted");
+        // }
+        // else if(sub.toUpperCase() === "ACTIVE" && payment.toUpperCase() === "PENDING"){
+        //     console.log("Access Denied");
+        // }
+        // else{
+        //     console.log("You are not access premium feature");
+        // }
+
+    // 60. Check if a mobile phone can install an app. 
+    // A phone can install an app if it has enough storage space and the operating system is updated. 
+    // Input: Storage: 5GB available, OS: Updated → Output: Installation allowed 
+    // Input: Storage: 1GB available, OS: Updated → Output: Installation not allowed due to low storage
+
+        // let storage = parseInt(prompt("Enter Available Storage in your Mobile"));
+        // let OS = prompt("Enter your mobile Operating System is updated or NOT");
+        // if(storage<=1 && OS.toLowerCase() === "updated"){
+        //     console.log("Installation not allowed due to low storage")
+        // }
+        // else if(storage>1 && OS.toLowerCase() === "updated"){
+        //     console.log("Installation allowed");
+        // }
+        // else{
+        //     console.log("Please Update OS ");
+        // }
+
+    // 61. Check if a car can be started. 
+    // A car will start only if there is enough fuel and the battery is charged. 
+    // Input: Fuel: Full, Battery: Charged → Output: Car starts 
+    // Input: Fuel: Full, Battery: Dead → Output: Car does not start 
+    
+        // let fuel = prompt("Enter Fuel Status (Full/Empty)");
+        // let battery = prompt("Enter Battery Status (Charged/Dead)");
+        // if(fuel.toLowerCase() === "full" && battery.toLowerCase() === "charged"){
+        //     console.log("Car Starts");
+        // }
+        // else if(fuel.toLowerCase() === "full" && battery.toLowerCase() === "dead"){
+        //     console.log("Car does not start");
+        // }
+        // else{
+        //     console.log("Please Fill Fuel and Charge Battery");
+        // }
+    
+    // 62. Check if an online payment can be processed. 
+    // An online payment will be processed only if the card is valid and there are sufficient funds in the account. 
+    // Input: Card: Valid, Funds: Sufficient → Output: Payment successful 
+    // Input: Card: Expired, Funds: Sufficient → Output: Payment failed 
+    
+        // let card = prompt("Enter Card Status (Valid/Expired)");
+        // let funds = prompt("Enter Funds Status (Sufficient/Insufficient)");
+        // if(card.toLowerCase() === "valid" && funds.toLowerCase() === "sufficient"){
+        //     console.log("Payment Successful");
+        // }
+        // else if(card.toLowerCase() === "expired" && funds.toLowerCase() === "sufficient"){
+        //     console.log("Payment Failed");
+        // }
+        // else{
+        //     console.log("Please Check Card and Funds Status");
+        // }
+    
+    // 63. Check if a person can participate in a sports tournament. 
+    // A person can participate if they have registered and cleared the medical checkup. 
+    // Input: Registered: Yes, Medical Cleared: Yes → Output: Allowed to participate 
+    // Input: Registered: Yes, Medical Cleared: No → Output: Not allowed to participate
+
+        // let registered = prompt("Enter you have registered (Yes/No)");
+        // let medicalCleared = prompt("Enter Medical Checkup Status (Yes/No)");
+        // if(registered.toLowerCase() === "yes" && medicalCleared.toLowerCase() === "yes"){
+        //     console.log("Allowed to participate");
+        // }
+        // else if(registered.toLowerCase() === "yes" && medicalCleared.toLowerCase() === "no"){
+        //     console.log("Not allowed to participate");
+        // }
+        // else{
+        //     console.log("Please Register and Clear Medical Checkup");
+        // }
+
+    // 65. Check if a person can enter a club. 
+    // A person can enter the club if they have a membership card or are invited by a club member. 
+    // Input: Membership: No, Invited: Yes → Output: Entry allowed 
+    // Input: Membership: No, Invited: No → Output: Entry denied 
+
+        // let membership = prompt("Enter Membership Status (Yes/No)");
+        // let invited = prompt("Enter Invitation Status (Yes/No)");
+        // if(membership.toLowerCase() === "yes" || invited.toLowerCase() === "yes"){
+        //     console.log("Entry Allowed");
+        // }
+        // else if(membership.toLowerCase() === "no" && invited.toLowerCase() === "no"){
+        //     console.log("Entry Denied");
+        // }
+        // else{
+        //     console.log("Please Check Membership and Invitation Status");
+        // }
+
+    // 66. Check if an email is marked as important. 
+    // An email is marked as important if it is from the boss or has the subject "Urgent". 
+    // Input: Sender: Boss, Subject: Normal → Output: Marked as important 
+    // Input: Sender: Employee, Subject: Normal → Output: Not marked as important 
+
+        // let sender = prompt("Enter Email Sender (Boss/Employee)");
+        // let subject = prompt("Enter Email Subject (Urgent/Normal)");
+        // if(sender.toLowerCase() === "boss" || subject.toLowerCase() === "urgent"){
+        //     console.log("Marked as Important");
+        // }
+        // else if(sender.toLowerCase() === "employee" && subject.toLowerCase() === "normal"){
+        //     console.log("Not Marked as Important");
+        // }
+        // else{
+        //     console.log("Please Check Email Sender and Subject");
+        // }
+
+    // 67. Check if a student gets a discount on books. 
+    // A student gets a discount if they show their student ID or if they buy books worth more than ₹1000. 
+    // Input: Student ID: No, Purchase: ₹1200 → Output: Discount applied 
+    // Input: Student ID: No, Purchase: ₹500 → Output: No discount 
+    
+        // let studentID = prompt("Do you have Student ID? (Yes/No)");
+        // let amount = parseInt(prompt("Enter Purchase Amount in ₹"));
+        // if(studentID.toLowerCase() === "yes" || amount > 1000){
+        //     console.log("Discount Applied");
+        // }
+        // else if(studentID.toLowerCase() === "no" && amount <= 1000){
+        //     console.log("No Discount");
+        // }
+        // else{
+        //     console.log("Please Check Student ID and Purchase Amount");
+        // }
+
+    // 68. Check if a car gets free parking. 
+    // A car gets free parking if it is an electric vehicle or the driver has a VIP pass. 
+    // Input: Car Type: Electric, VIP Pass: No → Output: Free parking 
+    // Input: Car Type: Petrol, VIP Pass: No → Output: Parking fee required 
+    
+        // let carType = prompt("Enter Car Type (Electric/Petrol)");
+        // let vipPass = prompt("Do you have VIP Pass? (Yes/No)");
+        // if(carType.toLowerCase() === "electric" || vipPass.toLowerCase() === "yes"){
+        //     console.log("Free parking");
+        // }
+        // else{
+        //     console.log("Parking fee required");
+        // }
+
+    // 69. Check if a person can board a flight. 
+    // A person can board the flight if they have a boarding pass or a government travel permit. 
+    // Input: Boarding Pass: No, Travel Permit: Yes → Output: Allowed to board 
+    // Input: Boarding Pass: No, Travel Permit: No → Output: Not allowed to board
+
+        // let pass = prompt("Enter your Boarding Pass (Yes/No)");
+        // let permit = prompt("Enter your Government Travel Permit (Yes/No)");
+        // if(pass.toLowerCase() === "yes" || permit.toLowerCase() === "yes"){
+        //     console.log("Allowed to board");
+        // }
+        // else if(pass.toLowerCase() === "no" && permit.toLowerCase() === "no"){
+        //     console.log("Not allowed to board");
+        // }
+        // else{
+        //     console.log("Please Check Boarding Pass and Travel Permit");
+        // }
+
+    // 70. Find the largest among three numbers (Using Nested If) 
+    // A program should check which of the three numbers is the largest by using a nested if condition. 
+    // Input: a = 10, b = 20, c = 15 
+    // Output: Largest number is 20 
+    // Input: a = 25, b = 25, c = 10 
+    // Output: Largest number is 25 
+
+        // let a = parseInt(prompt("Enter first number"));
+        // let b = parseInt(prompt("Enter second number"));
+        // let c = parseInt(prompt("Enter third number"));
+        // if(a > b) {
+        //     if (a > c) {
+        //         console.log("Largest number is " + a);
+        //     } else {
+        //         console.log("Largest number is " + c);
+        //     }
+        // } else {
+        //     if (b > c) {
+        //         console.log("Largest number is " + b);
+        //     } else {
+        //         console.log("Largest number is " + c);
+        //     }
+        // }
+
+//     71. Find the largest among three numbers (Using AND && Operator) 
+
+// A program should check which of the three numbers is the largest by ensuring that one number is greater than both the others using AND conditions. 
+
+// Input: a = 12, b = 8, c = 25 
+
+// Output: Largest number is 25 
+
+// Input: a = 50, b = 30, c = 50 
+
+// Output: Largest number is 50 
+
+//  let a = parseInt(prompt("Enter first number"));
+//  let b = parseInt(prompt("Enter second number"));
+//  let c = parseInt(prompt("Enter third number"));
+//  if(a > b && a > c) {
+//      console.log("Largest number is " + a);
+//  } else if(b > a && b > c) {
+//      console.log("Largest number is " + b);
+//  } else {
+//      console.log("Largest number is " + c);
+//  }
+
+// 72. Find the largest among four numbers (Using Nested If) 
+
+// A program should check which of the four numbers is the largest by comparing them using nested if statements. 
+
+// Input: a = 30, b = 50, c = 20, d = 10 
+
+// Output: Largest number is 50 
+
+// Input: a = 100, b = 99, c = 100, d = 100 
+
+// Output: Largest number is 100 
+
+//  let a = parseInt(prompt("Enter first number"));
+//  let b = parseInt(prompt("Enter second number"));
+//     let c = parseInt(prompt("Enter third number"));
+//     let d = parseInt(prompt("Enter fourth number"));
+//     if(a > b) {
+//         if(a > c) {
+//             if(a > d) {
+//                 console.log("Largest number is " + a);
+//             } else {
+//                 console.log("Largest number is " + d);
+//             }
+//         } else {
+//             if(c > d) {
+//                 console.log("Largest number is " + c);
+//             } else {
+//                 console.log("Largest number is " + d);
+//             }
+//         }
+//     } else {
+//         if(b > c) {
+//             if(b > d) {
+//                 console.log("Largest number is " + b);
+//             } else {
+//                 console.log("Largest number is " + d);
+//             }
+//         } else {
+//             if(c > d) {
+//                 console.log("Largest number is " + c);
+//             } else {
+//                 console.log("Largest number is " + d);
+//             }
+//         }
+//     }
+
+// 73. Find the largest among four numbers  
+
+// A program should check if any one of the four numbers is greater than the others by using && conditions. 
+
+// Input: a = 15, b = 45, c = 25, d = 35 
+
+// Output: Largest number is 45 
+
+// Input: a = 90, b = 75, c = 80, d = 90 
+
+// Output: Largest number is 90 
+
+//  let a = parseInt(prompt("Enter first number"));
+//  let b = parseInt(prompt("Enter second number"));
+//  let c = parseInt(prompt("Enter third number"));
+//  let d = parseInt(prompt("Enter fourth number"));
+// if(a > b && a > c && a > d) {
+//     console.log("Largest number is " + a);
+// } else if(b > a && b > c && b > d) {
+//     console.log("Largest number is " + b);
+// } else if(c > a && c > b && c > d) {
+//     console.log("Largest number is " + c);
+// } else {
+//     console.log("Largest number is " + d);
+// }
+// 74. Electricity Bill Calculation 
+
+// A program should calculate the electricity bill based on the following conditions: 
+
+// If the electricity consumption is less than or equal to 100 units, the charge is ₹5 per unit. 
+
+// If the consumption is between 101 and 300 units, the charge is ₹7 per unit for units above 100 and ₹5 per unit for the first 100 units. 
+
+// If the consumption is above 300 units, the charge is ₹10 per unit for units above 300, ₹7 per unit for the next 200 units, and ₹5 per unit for the first 100 units. 
+
+
+
+
+
+// Example : 
+
+// Input: Electricity Consumption: 80 units 
+
+// Output: Total Bill: ₹400 (80 × ₹5) 
+
+ // let units = parseInt(prompt("Enter Electricity Consumption in Units"));
+// let bill = 0;
+//   if(consumption <= 100) {
+//     bill = consumption * 5;
+// } else if(consumption <= 300) {
+//     bill = 100 * 5 + (consumption - 100) * 7;
+// } else {
+//     bill = 100 * 5 + 200 * 7 + (consumption - 300) * 10;
+// }
+// console.log("Total Bill: ₹" + bill);
+
+ 
+
+// 75. Student Grade Calculation 
+
+// A program hould determine a student's grade based on their percentage score: 
+
+// 90% and above → Grade A 
+
+// 80% - 89% → Grade B 
+
+// 70% - 79% → Grade C 
+
+// 60% - 69% → Grade D 
+
+// Below 60% → Grade F 
+
+ 
+
+// Example 1: 
+
+// Input: Marks: 92% 
+
+// Output: Grade: A 
+
+ 
+
+// Example 2: 
+
+// Input: Marks: 75% 
+
+// Output: Grade: C 
+
+ 
+// let marks = parseInt(prompt("Enter your Marks Percentage"));
+// let grade = '';
+// if(marks >= 90) {
+//     grade = 'A';
+// } else if(marks >= 80) {
+//     grade = 'B';
+// } else if(marks >= 70) {
+//     grade = 'C';
+// } else if(marks >= 60) {
+//     grade = 'D';
+// } else {
+//     grade = 'F';
+// }
+// console.log("Grade: " + grade);
+</script>
 </body>
 </html>
