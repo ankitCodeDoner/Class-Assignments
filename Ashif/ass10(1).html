@@ -166,7 +166,7 @@
 // console.log(count);
 
 //  let num = parseInt(prompt("enter number"));
-//  let count = 0;
+//  let count = 0;                                                                                                                                                            
 //  for(i=num;i>=0;i--){
 //     i /= 10;
 //     count ++;
@@ -179,6 +179,10 @@
 // Output: 1 4 9 16 25 
 // Explanation: This program prints the square (number × number) of each number from 1 to N. 
 
+//  let num = parseInt(prompt("N = "));
+//  for(let i =1 ;i<=num;i++){
+//     console.log(i*i);
+//  }
  
 
 // 5. Print the Fibonacci series up to N terms using a for loop 
@@ -187,7 +191,19 @@
 // Output: 0 1 1 2 3 5 8 
 // Explanation: The Fibonacci series starts with 0 and 1, and each number after that is the sum of the previous two. This continues N times. 
 
- 
+//  let num = parseInt(prompt("N = "));
+//  let a = 0, b = 1, nextTerm;
+
+//  for(let i = 0; i < num; i++){
+//      if(i <= 1){
+//          nextTerm = i;
+//      } else {
+//          nextTerm = a + b;
+//          a = b;
+//          b = nextTerm;
+//      }
+//      console.log(nextTerm);
+//  }
 
 // 6. Find the sum of all odd numbers from 1 to 50 using a for loop 
 
@@ -195,7 +211,15 @@
 // Output: Sum = 625 
 // Explanation: This program checks if each number between 1 and 50 is odd, and if it is, adds it to the sum. 
 
- 
+//  let num = parseInt(prompt("number "));
+//  let sum = 0;
+//  for(let i = 1; i <= 50; i++){
+//     if(i % 2 != 0){
+//         sum += i;
+//     }
+//  }
+//  console.log("Sum = " + sum);
+
 
 // 7. Count how many times digit 7 appears in a number using a for loop 
 
@@ -203,7 +227,17 @@
 // Output: Count = 3 
 // Explanation: This program extracts each digit from the number using a loop and checks if it’s 7. If it is, it increases the count. 
 
- 
+//  let num = parseInt(prompt("Enter a number: "));
+//  let count = 0;
+          
+//  for(let i = num;i > 0; i = parseInt(i/10)){
+//     let digit = parseInt(i%10);
+//      if (digit == 7){
+//         count ++;
+//      }
+    // console.log(digit);
+//  }
+//  console.log(count);
 
 // 8. Count and display how many numbers between 1 and 100 are divisible by 7 using a for loop 
 
@@ -211,7 +245,14 @@
 // Output: Count = 14 
 // Explanation: This program loops through numbers from 1 to 100, checks if each number is divisible by 7, and keeps a count of how many such numbers exist. 
 
- 
+//  let num = parseInt(print("enter number"));
+//  let count = 0;
+//  for(let i = 1;i <=100;i++){
+//  if(i % 7==0){
+//     count++;
+//  }
+//  }
+//  console.log(count);
 
 // 9. Find the sum of all multiples of 4 from 1 to 40 using a for loop 
 
@@ -219,7 +260,14 @@
 // Output: Sum = 220 
 // Explanation: This program goes through numbers from 1 to 40 and adds them if they are divisible by 4. 
 
- 
+//  let num = parseInt(prompt("enter number"));
+//  let sum = 0;
+//  for(let i=1;i<=40;i++){
+//     if(i % 4 ==0){
+//     sum +=i;
+//  }
+// }
+// console.log(sum);
 
 // 10. Display all prime numbers between 10 and 50 using a for loop 
 
@@ -227,11 +275,167 @@
 // Output: 11 13 17 19 23 29 31 37 41 43 47 
 // Explanation: A prime number has only two factors: 1 and itself. The program checks each number between 10 and 50 to see if it's prime. 
 
+//  let num = parseInt(prompt("enter number"));
+ 
+//  for(let i=10;i<=50;i++){
+//     if(i %2 !=0 && i%3 !=0 && i%5 !=0 && i%7 !=0 ){
+//         console.log(i);
+//     }
+//  }
+
  
 
- 
+                          //loop assignment          
 
 
+//  1.   Reverse a Number 
+// Take an integer input and print its reverse using a loop. 
+// Example: Input = 123 → Output = 321 
+
+    // let num =parseInt(prompt("enter number"));
+    // let re= 0;
+    // for(let i=num; i>0; i=parseInt(i/10)){
+    //     console.log(i);
+    //     let digit = i % 10; 
+    //     re = re * 10 + digit; 
+    // } 
+    // console.log(re);
+
+// 2. Check Palindrome Number 
+// Definition: A number is called a palindrome if it remains the same when its digits are reversed. 
+// Example: 121, 1331, 12321 
+// Write a program to check if a number is a palindrome using a loop. 
+
+// let num = parseInt(prompt("enter number"));
+// let re = 0;
+// for(let i=num;i>0;i=parseInt(i/10)){
+
+//     let digit = i % 10;
+//     re = re * 10 + digit;
+// }
+// if(num == re){
+//     console.log(num + " palindrome");
+    
+// }
+// else{
+//     console.log(" not palindrome");
+// }
+
+//3.    Print Fibonacci Series up to N terms 
+// Generate and print the first N Fibonacci numbers using a loop. 
+// Example: 0, 1, 1, 2, 3, 5, 8... 
+
+//  let num = parseInt(prompt("N = "));
+//  let a = 0, b = 1, nextTerm;
+
+//  for(let i = 0; i < num; i++){
+//      if(i <= 1){
+//          nextTerm = i;
+//      } else {
+//          nextTerm = a + b;
+//          a = b;
+//          b = nextTerm;
+//      }
+//      console.log(nextTerm);
+//  } 
+
+// 4.  Check Armstrong Number 
+// Definition: A number is an Armstrong number if the sum of its digits each raised to the power of the number of digits equals the number itself. 
+// Example: 153 → 1³ + 5³ + 3³ = 153 
+// Use a loop to check if a number is Armstrong. 
+
+// let num = parseInt(prompt("enter any value"));
+// let sum = 0;
+// for(let i=num; i>0; i=parseInt(i/10)){
+//     let digit = i%10;
+//     sum = sum + (digit*digit*digit);
+// }
+// if(num === sum){
+//     console.log( num + " is an Armstrong number");
+// }
+// else{
+//     console.log("NOT an Armstrong NUmber")
+// }
+//5.    Factorial of a Number 
+// Calculate the factorial of a given number using a loop. 
+// Example: 5! = 120 
+
+// let num = parseInt(prompt("enter number"));
+// let factorial=1;
+// for(let i=num; i>=1;i--){
+//     factorial=factorial*i;
+// }
+// console.log(factorial);
+
+// 6.  Print Multiplication Table 
+// Print the multiplication table for a number using a loop. 
+// Example: 2 × 1 = 2 up to 2 × 10 = 20 
+
+
+// let num = parseInt(prompt("enter number"));
+// for(let i=1;i<=10; i++){
+//     console.log(num+ " * " + i + " = " + i*num);
+// }
+
+// 7.  Count the Number of Digits 
+// Count how many digits are in the input number using a loop. 
+// Example: 1234 → 4 digits 
+
+//  let num = parseInt(prompt("enter number"));
+//  let count=0;
+//  for(let i=num; i>0;i=parseInt(i/10)){
+//     count ++; 
+//  }
+//  console.log(count);
+
+// 8.   Sum of Digits 
+// Write a loop to sum the digits of a number. 
+// Example: 456 → 4+5+6 = 15 
+
+// let num = parseInt(prompt("enter number"));
+// let sum=0;
+// for(let i=num; i>0; i=parseInt(i/=10)){
+//     let digit=i%10;
+//     sum = sum + (digit);
+// }
+// console.log(sum);
+
+// 9.  Print All Even Numbers from 1 to N 
+// Using a loop, print all even numbers from 1 to a given number N. 
+
+// let num = parseInt(prompt("enter number"));
+// for(let i=0;i<=num;i +=2){
+    
+//     console.log(i);
+
+// }
+
+// 10.    Print Prime Numbers from 1 to 100 
+// Use loops to print all prime numbers between 1 and 100. 
+
+                       
+
+//   for(let i=2; i<=100; i++){
+//  let prime = true;
+
+//   for(let j = 2; j<i; j++){
+//    if(i % j == 0){
+//     prime = false;
+//     break;
+//    }
+//   }
+//   if(prime){
+//  console.log(i);
+//   }
+//  }
+
+
+
+
+
+
+    
  </script>
+ <!-- <script src="./script.js"></script> -->
 </body>
 </html>
