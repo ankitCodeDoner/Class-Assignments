@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Pattern 1 - Rectangle Star ⭐
+        // * * * * *
+        // * * * * *
+        // * * * * *
+        // * * * * *
+
+        // for (let i = 1; i <= 4; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= 5; j++) {
+        //         document.write("*");
+        //     }
+        // }
+
+        // Pattern 2 - Same Number
+        // 1 1 1 1 1
+        // 1 1 1 1 1
+        // 1 1 1 1 1
+        // 1 1 1 1 1
+
+        // for (let i = 1; i <= 4; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= 5; j++) {
+        //         document.write("1");
+        //     }
+        // }
+
+        // Pattern 3 - Same Alphabet
+        // A A A A A
+        // A A A A A
+        // A A A A A
+        // A A A A A
+
+        // for (let i = 1; i <= 4; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= 5; j++) {
+        //         document.write("A");
+        //     }
+        // }
+
+        // Pattern 4 - Column Numbers(j)
+        // 1 2 3 4 5
+        // 1 2 3 4 5
+        // 1 2 3 4 5
+        // 1 2 3 4 5
+
+        // for (let i = 1; i <= 4; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= 5; j++) {
+        //         document.write(j);
+        //     }
+        // }
+
+        // Pattern 5 - Row Numbers(i)
+        // 1 1 1 1 1
+        // 2 2 2 2 2
+        // 3 3 3 3 3
+        // 4 4 4 4 4
+
+        // for (let i = 1; i <= 4; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= 5; j++) {
+        //         document.write(i);
+        //     }
+        // }
+
+        // Pattern 6 - Triangle Star ⭐
+        // *
+        // * *
+        // * * *
+        // * * * *
+        // * * * * *
+
+        // for (let i = 1; i <= 5; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write("*");
+        //     }
+        // }
+
+        // Pattern 7 - Triangle Numbers(j)
+        // 1
+        // 1 2
+        // 1 2 3
+        // 1 2 3 4
+        // 1 2 3 4 5
+
+        // for (let i = 1; i <= 5; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write(j);
+        //     }
+        // }
+
+        // Pattern 8 - Triangle Numbers(i)
+        // 1
+        // 2 2
+        // 3 3 3
+        // 4 4 4 4
+        // 5 5 5 5 5
+
+        // for (let i = 1; i <= 5; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write(i);
+        //     }
+        // }
+
+        // Pattern 9 - Triangle Alphabet
+        // A
+        // A A
+        // A A A
+        // A A A A
+        // A A A A A
+
+        // for (let i = 1; i <= 5; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write("A");
+        //     }
+        // }
+
+
+        // Pattern 10 - Alphabet Sequence
+        // A
+        // A B
+        // A B C
+        // A B C D
+        // A B C D E
+
+        // for (let i = 1; i <= 5; i++) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write(String.fromCharCode(64 + j));
+        //     }
+        // }
+
+
+        // Pattern 11 - Reverse Triangle
+        // * * * * *
+        // * * * *
+        // * * *
+        // * *
+        // *
+
+        // for (let i = 5; i >= 1; i--) {
+        //     document.write("<br>");
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write("*");
+        //     }
+        // }
+
+
+        // Pattern 12 - Reverse Numbers
+        // 1 2 3 4 5
+        // 1 2 3 4
+        // 1 2 3
+        // 1 2
+        // 1
+
+        // for (let i = 5; i >= 1; i--) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= i; j++) {
+        //         pattern += j + " ";
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+        // Pattern 13 - Reverse Row Numbers
+        // 5 5 5 5 5
+        // 4 4 4 4
+        // 3 3 3
+        // 2 2
+        // 1
+
+        // for (let i = 5; i >= 1; i--) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= i; j++) {
+        //         pattern += i + " ";
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+        // Pattern 14 - Floyd's Triangle
+        // 1
+        // 2 3
+        // 4 5 6
+        // 7 8 9 10
+        // 11 12 13 14 15
+
+        // let num = 1;
+
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write(num++ + " ");
+        //     }
+        //     document.write("<br>");
+        // }
+
+        // Pattern 15 - 0 - 1 Pattern
+        // 1
+        // 0 1
+        // 1 0 1
+        // 0 1 0 1
+        // 1 0 1 0 1
+
+        // for (let i = 1; i <= 5; i++) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= i; j++) {
+        //         if ((i + j) % 2 == 0) {
+        //             pattern += "1 ";
+        //         } else {
+        //             pattern += "0 ";
+        //         }
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+        // let rows = 4;
+        // let cols = 5;
+
+        // for (let i = 1; i <= rows; i++) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= cols; j++) {
+
+        //         if (i == 1 || i == rows || j == 1 || j == cols) {
+        //             pattern += "* ";
+        //         } else {
+        //             pattern += "&nbsp;&nbsp;&nbsp;";
+        //         }
+
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+        // let rows = 5;
+
+        // for (let i = 1; i <= rows; i++) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= rows - i; j++) {
+        //         pattern += "&nbsp;&nbsp;&nbsp;";
+        //     }
+
+        //     for (let j = 1; j <= (2 * i - 1); j++) {
+        //         pattern += "* ";
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+        // Pattern 18 - Inverted Pyramid
+        // * * * * * * * * *
+        //  * * * * * * *
+        //    * * * * *
+        //      * * *
+        //        *
+
+
+        // let rows = 5;
+
+        // for (let i = 1; i <= rows; i++) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= i - 1; j++) {
+        //         pattern += "&nbsp;&nbsp;&nbsp;";
+        //     }
+
+        //     for (let j = 1; j <= (2 * (rows - i) + 1); j++) {
+        //         pattern += "* ";
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+        // Pattern 19 - Diamond
+        //           *
+        //         * * *
+        //       * * * * *
+        //     * * * * * * *
+        //   * * * * * * * * *
+        //     * * * * * * *
+        //       * * * * *
+        //         * * *
+        //           *
+
+        // let rows = 5;
+
+        // for (let i = 1; i <= rows; i++) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= rows - i; j++) {
+        //         pattern += "&nbsp;&nbsp;&nbsp;";
+        //     }
+
+        //     for (let j = 1; j <= (2 * i - 1); j++) {
+        //         pattern += "* ";
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+        // for (let i = rows - 1; i >= 1; i--) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= rows - i; j++) {
+        //         pattern += "&nbsp;&nbsp;&nbsp;";
+        //     }
+
+        //     for (let j = 1; j <= (2 * i - 1); j++) {
+        //         pattern += "* ";
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+        // Pattern 20 - Butterfly
+        // *               *
+        // * *           * *
+        // * * *       * * *
+        // * * * *   * * * *
+        // * * * * * * * * *
+
+        // * * * * * * * * *
+        // * * * *   * * * *
+        // * * *       * * *
+        // * *           * *
+        // *               *
+
+        // let rows = 5;
+
+        // for (let i = 1; i <= rows; i++) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= i; j++) {
+        //         pattern += "* ";
+        //     }
+
+        //     for (let j = 1; j <= 2 * (rows - i); j++) {
+        //         pattern += "&nbsp;&nbsp;&nbsp;";
+        //     }
+
+        //     for (let j = 1; j <= i; j++) {
+        //         pattern += "* ";
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+        // for (let i = rows; i >= 1; i--) {
+        //     let pattern = "";
+
+        //     for (let j = 1; j <= i; j++) {
+        //         pattern += "* ";
+        //     }
+
+        //     for (let j = 1; j <= 2 * (rows - i); j++) {
+        //         pattern += "&nbsp;&nbsp;&nbsp;";
+        //     }
+
+        //     for (let j = 1; j <= i; j++) {
+        //         pattern += "* ";
+        //     }
+
+        //     document.write(pattern + "<br>");
+        // }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
