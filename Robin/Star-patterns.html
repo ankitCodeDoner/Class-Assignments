@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+        background-color : black;
+        color : white;
+        }
+    </style>
+    <script>
+
+//Pattern 4 - Column Numbers
+// let sum = 0;
+// for(let i = 1; i<= 5; i++)
+// {
+//     sum = sum + i;
+// }
+// console.log(sum);
+
+
+
+//Pattern 5 - Row Numbers
+// for (let i = 1; i <= 4; i++) {
+//     let row = "";
+
+//     for (let j = 1; j <= 5; j++) {
+//         row += i + " ";
+//     }
+
+//     console.log(row);
+// }
+
+
+
+//Pattern 6 - Triangle Star
+// for(let i=1; i<=5; i++)
+// {
+//     let row ="";
+//     for(let j=1; j<= i; j++)
+// {
+//     row += "*";
+// }
+// console.log(row);
+// }
+
+
+//Pattern 7 - Triangle numbers
+// for (let i = 1; i <= 5; i++) {
+//     let row = "";
+
+//     for (let j = 1; j <= i; j++) {
+//         row += j + " ";
+//     }
+
+//     console.log(row);
+// }
+
+
+//Pattern 8 - Triangle Numbers
+//for (let i = 1; i <= 5; i++) {
+//     let row = "";
+
+//     for (let j = 1; j <= i; j++) {
+//         row += i + " ";
+//     }
+
+//     console.log(row);
+// }
+
+
+//Pattern 9 - Triangle Alphabet
+// for(let i = 1; i<= 5; i++)
+// {
+//     let row = "";
+//     for(let j = 1; j <= i; j++)
+// {
+//     row += "A"; 
+// }
+// console.log(row);
+// }
+
+
+// Pattern 10 - Alphabet Sequence
+// for ( let i = 1; i <= 5; i ++)
+// {
+//     let row = "";
+//     for ( let j = 1; j <= i; j++)
+// {
+//     row += String.fromCharCode(64 + j)+ " ";
+// }
+// console.log(row);
+// }
+
+
+// Pattern 11 - reverse Triangle
+// for( let i = 1; i <= 5; i++)
+// {
+//     let row = "";
+//     for ( let j = 1 ; j <= 5 - i + 1; j++ )
+// {
+//     row += " *";
+// }
+// console.log (row);
+// }
+
+//Pattern 12 - Reverse numbers
+// for (let i = 1; i <= 5; i++) {
+//     let row = "";
+
+//     for (let j = 1; j <= 5 - i + 1; j++) {
+//         row += j + " ";
+//     }
+
+//     console.log(row);
+// }
+
+
+
+
+// Pattern 13 - Reverse Row Numbers
+// let n = 5;
+
+// for (let i = 1; i <= n; i++) {
+//     let row = "";
+
+//     for (let j = 1; j <= n - i + 1; j++) {
+//         row += (n - i + 1) + " ";
+//     }
+
+//     console.log(row);
+// }
+
+
+
+
+//Patttern 14 - Floyd's Triangle
+// let num = 1;
+// for ( let i = 1; i <= 5; i++){
+//     let row = "";
+
+//     for ( let j = 1; j <= i; j++){
+//         row += num + " ";
+//         num++;
+//     }
+//     console.log(row);
+// }
+
+
+
+//Pattern 15 - 0-1 Pattern
+// for(let i = 1; i <= 5; i++){
+//     let row = "";
+
+//     for ( let j = 1; j <= i; j++){
+//         if ((i + j) % 2 === 0 ){
+//             row += "1";
+//         } else
+//         row += "0";
+//     }
+//     console.log(row);
+// }
+
+
+//Pattern 16 - Hollow Rectangle
+// let rows = 4;
+// let cols = 5;
+
+// for (let i = 1; i <= rows; i++) {
+//     let row = "";
+
+//     for (let j = 1; j <= cols; j++) {
+
+//         // First row or last row
+//         if (i === 1 || i === rows) {
+//             row += "* ";
+//         }
+//         // First column or last column
+//         else if (j === 1 || j === cols) {
+//             row += "* ";
+//         }
+//         // Inside the rectangle
+//         else {
+//             row += "  ";
+//         }
+//     }
+
+//     console.log(row);
+// }
+
+
+
+
+//Pattern 17 - Pyramid
+//         *
+//       * * *
+//     * * * * *
+//   * * * * * * *
+// * * * * * * * * *
+// let n = 5;
+
+// for (let i = 1; i <= n; i++) {
+//     let row = "";
+
+//     // Spaces
+//     for (let j = 1; j <= n - i; j++) {
+//         row += " ";
+//     }
+
+//     // Stars
+//     for (let j = 1; j <= 2 * i - 1; j++) {
+//         row += "*";
+//     }
+
+//     console.log(row);
+// }
+
+
+// Pattern 18 - Inverted pyramid
+// for ( let i = 5; i >= 1; i--){
+//     let row = "";
+
+//     for (let j=1; j<=5 - i; j++){
+//         row += " ";
+//     }
+//     for (let j = 1; j<= 2*i-1; j++){
+//         row += "*";
+//     }
+//     console.log(row);
+
+// }
+
+
+// Pattern 19 - Diamond
+// Top Pyramid
+// for (let i = 1; i <= 5; i++) {
+
+//     // Spaces
+//     for (let j = 1; j <= 5 - i; j++) {
+//         document.write("&nbsp;&nbsp;");
+//     }
+
+//     // Stars
+//     for (let j = 1; j <= 2 * i - 1; j++) {
+//         document.write("* ");
+//     }
+
+//     document.write("<br>");
+// }
+
+// // Bottom Pyramid
+// for (let i = 4; i >= 1; i--) {
+
+//     // Spaces
+//     for (let j = 1; j <= 5 - i; j++) {
+//         document.write("&nbsp;&nbsp;");
+//     }
+
+//     // Stars
+//     for (let j = 1; j <= 2 * i - 1; j++) {
+//         document.write("* ");
+//     }
+
+//     document.write("<br>");
+// }
+
+
+//Pattern 20 - Butterfly
+// Top
+// for (let i = 1; i <= 5; i++) {
+
+//     // Left Stars
+//     for (let j = 1; j <= i; j++) {
+//         document.write("* ");
+//     }
+
+//     // Spaces
+//     for (let j = 1; j <= (5 - i) * 4; j++) {
+//         document.write("&nbsp;");
+//     }
+
+//     // Right Stars
+//     for (let j = 1; j <= i; j++) {
+//         document.write("* ");
+//     }
+
+//     document.write("<br>");
+// }
+
+// // Bottom
+// for (let i = 4; i >= 1; i--) {
+
+//     // Left Stars
+//     for (let j = 1; j <= i; j++) {
+//         document.write("* ");
+//     }
+
+//     // Spaces
+//     for (let j = 1; j <= (5 - i) * 4; j++) {
+//         document.write("&nbsp;");
+//     }
+
+//     // Right Stars
+//     for (let j = 1; j <= i; j++) {
+//         document.write("* ");
+//     }
+
+//     document.write("<br>");
+// }
+
+
+
+    </script>
+    
+</body>
+</html>
