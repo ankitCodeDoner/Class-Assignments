@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Print numbers from 1 to 10. 
+            // for(let i = 1; i <= 10; i++){
+            //    console.log(i);
+            // }
+
+        // 2. Print even numbers from 2 to 20. 
+            // for(let i = 2; i <= 20; i+=2){
+            //     console.log(i);
+            // }
+
+            //    for(let i = 3; i <= 30; i+=3){
+            //        console.log(i);
+            // }
+                
+        //  3. Print the squares of numbers from 1 to 10.
+        
+        // for(let i =1; i <= 10; i++){
+        //     console.log(i + "=" + (i * i))
+        // }
+        
+        // 4. Print the numbers from 10 to 1 in reverse order. 
+
+        // for(let i = 10; i >= 1; i--){
+        //     console.log(i);
+        // }
+        
+
+        // 5. Print the first 10 multiples of 5.
+        
+        // for(let i = 1; i <= 10; i++){
+        //     console.log(i + "=" + (i * 5));
+        // }
+
+        // 6. Print all odd numbers between 1 and 30.
+
+        // for(let i = 1; i <= 30; i+=2){
+        //     console.log(i)
+        // }
+
+        // 7. Print the table of 7 (i.e., 7, 14, 21, ..., up to 70).
+
+        // for(let i = 7; i <= 70; i+=7){
+        //     console.log(i)
+        // }
+
+        // 8. Print numbers from 50 to 100 with a step of 5.
+
+        // for(let i = 50; i <= 100; i+=5){
+        //    console.log(i)
+        // }
+
+        // 9. Print the sum of numbers from 1 to 100. 
+        // sum = 0
+        // for(let i = 1; i <= 100; i++){
+        //    sum = sum + i;
+        
+        // console.log("adding : " + i + " = " + sum);
+        // }
+
+
+        // 🔁 FOR Loop (7 Questions) 
+
+        //1  Print numbers from 1 to 10 using a for loop.
+              
+        //     for(let i = 1; i <= 10; i++){
+        //        console.log(i);
+        //     }
+
+        // 2 Print even numbers between 1 and 20 using a for loop.  
+        
+        // for(let i = 2; i <= 20; i+=2){
+        //     console.log(i);
+        // }
+
+        // 3 Print the multiplication table of 5 using a for loop. 
+        
+    //     for(let i = 5; i <= 50; i+=5){
+    //         console.log(i);
+    //     }
+
+    //     4 Print the square of numbers from 1 to 5 using a for loop.
+        
+    //     for(let i = 1; i <= 5; i++){
+    //         console.log(i + " = " + (i * i));
+    //     }
+
+    //     5 Print numbers from 10 down to 1 using a for loop. 
+
+    //     for(let i = 10; i >= 1; i--){
+    //         console.log(i);
+    //     }
+
+    //    6 Print all numbers between 1 to 50 that are divisible by 7 using a for loop.
+          
+    //    for(let i = 7; i <= 50; i+=7){
+    //     console.log(i);
+    //    }
+        
+    //  7 Calculate and print the sum of numbers from 1 to 100 using a for loop.
+       
+    //    sum = 0
+    //    for(let i = 1; i <= 100; i++){
+    //    sum = sum + i;
+        
+    //    console.log("adding : " + i + " = " + sum);
+    //    }
+
+
+    // 🔁 WHILE Loop  
+
+    // 8 Print numbers from 10 down to 1 using a while loop. 
+
+    //  let i = 10;
+    //  while(i >= 1){
+    //     console.log(i)
+    //     i--
+    //  }
+
+    //9  Ask the user to enter a number and print all numbers from 1 to that number using a while loop.      
+     
+    //  let num = parseInt(prompt("Enter any no"));
+    //  let i = 1;
+    //  while(i <= num){
+    //     document.write(i + "<br>");
+    //     i++;
+    //  }
+
+    //10 Print the first 10 multiples of 3 using a while loop. 
+              
+        // let i = 1;
+        // while(i <= 10){
+        //     console.log(i * 3);
+        //     i++;
+        // }
+
+     //11 Print numbers from 1 to 50 that are divisible by 5 using a while loop.   
+         
+    //   let  i = 5;
+    //   while(i <= 50){
+    //     console.log(i);
+    //     i+=5;
+    //   }
+
+     //🔁 DO-WHILE Loop  
+
+    //12 Keep asking the user to enter a number until they enter a number greater than 50. 
+      
+    // let num;
+    // do{
+    //     num = parseInt(prompt("Enter any no greater than 50"));
+    //     console.log(num);
+        
+    //    }while(num <= 50);
+
+    //  console.log("you entered = " + num);
+
+    // let num;
+    // do{
+    //     num = parseInt(prompt("Enter any no greater than 100"));
+    //    
+    //   }while(num <= 100);
+    //       document.write("you entered : " + num + "<br>");
+
+     
+
+     //13 Ask the user to type "exit" to stop the program. Keep asking until they do.  document.write(num + "<br>");
+      
+    //  let text;
+    //  do{
+    //     text = prompt("Enter the 'exit' to stop  the program");
+    //    console.log(text);
+    //  }while(text != "exit");
+    //  console.log("Your program is stop...");
+    
+    //14  Ask the user to guess a secret number (e.g., 7) until they guess correctly. 
+        
+    //   let secret = 7;
+    //   let guess;
+    //   do{
+    //     guess = parseInt(prompt("Guess any no :"));
+    //     // document.write(guess + "<br>");
+    //   }while(guess != secret);
+    //    document.write("Your guess correct...");
+
+    //15 Ask the user to enter a password. Repeat until the correct password is entered. 
+    
+    //   let password = "admin123";
+    //   let pass;
+    //   do{
+    //     pass = prompt("Enter password : ");
+    //     document.write(pass + "<br>");
+    //   }while(pass != password);
+    //    document.write("Password is correct...")
+    
+       //1  ractangle star
+
+    //  * * * * *
+    //  * * * * *
+    //  * * * * *
+    //  * * * * *
+
+     
+    //  for(let i = 1; i <= 4; i++){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= 5; j++){
+    //         document.write("*")
+    //       }
+    //  }
+
+    // pattern 2 same no
+
+    // 1 1 1 1 1
+    // 1 1 1 1 1
+    // 1 1 1 1 1
+    // 1 1 1 1 1
+    // Analysis
+    // Rows = 4
+
+    // Columns = 5
+
+    // Print = 1
+
+
+    // for(let i = 1; i <= 4; i++){
+    //     document.write("<br>");
+
+    //      for(let j = 1; j <= 5; j++){
+    //         document.write("1 ");
+    //      }
+    // }
+
+
+    // pattern 3 same alphabet 
+
+// A A A A A
+// A A A A A
+// A A A A A
+// A A A A A
+// Analysis
+// Rows = 4
+
+// Columns = 5
+
+// Print = A
+
+
+
+    // for(let i = 1; i <= 4; i++){
+    //     document.write("<br>");
+
+    //      for(let j = 1; j <= 5; j++){
+    //         document.write("A")
+    //      }
+    // }
+
+
+     //Pattern 4 - Column Numbers (j)
+// 1 2 3 4 5
+// 1 2 3 4 5
+// 1 2 3 4 5
+// 1 2 3 4 5
+// Analysis
+// Rows = 4
+
+// Columns = 5
+
+// Print = Column Number (j)
+
+
+    // for(let i = 1; i <= 4; i++){
+    //     document.write("<br>");
+
+    //      for(let j = 1; j <= 5; j++){
+    //         document.write(j);
+    //      }
+    // }
+
+
+    // Pattern 5 - Row Numbers (i)
+//  1 1 1 1 1
+// 2 2 2 2 2
+// 3 3 3 3 3
+// 4 4 4 4 4
+
+// Analysis
+// Rows = 4
+
+// Columns = 5
+
+// Print = Row Number (i)
+
+
+    // for(let i = 1; i <= 4; i++){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= 5; j++){
+    //         document.write(i);
+    //       }
+    // }
+
+
+    // Pattern 6 - Triangle Star ⭐
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+// Analysis
+// Rows = 5
+
+// Columns = Row Number
+
+// Print = *
+
+      
+    // for(let i = 1; i <= 5; i++){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= i; j++){
+    //         document.write("*");
+    //       }
+    // }
+
+
+
+
+    // Pattern 7 - Triangle Numbers (j)
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+// Analysis
+// Rows = 5
+
+// Columns = Row Number
+
+// Print = Column Number (j)
+
+      
+    // for(let i = 1; i <= 5; i++){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= i; j++){
+    //         document.write(j);
+    //       }
+    // }
+
+    // Pattern 8 - Triangle Numbers (i)
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+// 5 5 5 5 5
+// Analysis
+// Rows = 5
+
+// Columns = Row Number
+
+// Print = Row Number (i)
+
+
+    // for(let i = 1; i <= 5; i++){
+    //     document.write("<br>")
+
+    //     for(let j = 1; j <= i; j++){
+    //         document.write(i);
+    //     }
+    // }
+
+    // Pattern 9 - Triangle Alphabet
+// A
+// A A
+// A A A
+// A A A A
+// A A A A A
+// Analysis
+// Rows = 5
+
+// Columns = Row Number
+
+// Print = A
+
+
+    // for(let i = 1; i <= 5; i++){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= i; j++){
+    //         document.write("A");
+    //       }
+    // }
+
+
+    //Pattern 10 - Alphabet Sequence
+// A
+// A B
+// A B C
+// A B C D
+// A B C D E
+// Analysis
+// Rows = 5
+
+// Columns = Row Number
+
+// Print = Alphabet by Column
+
+
+// for(let i = 1; i <= 26; i++){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= i; j++){          
+    //         document.write(String.fromCharCode(64 +j)+ " ");
+    //       }
+    // }
+
+//        Pattern 11 - Reverse Triangle
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+// Analysis
+// Rows = 5
+
+// Columns = 5,4,3,2,1
+
+// Print = *
+
+
+
+    // for(let i = 5; i >= 1; i--){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= i; j++){
+    //         document.write("*");
+    
+    //     }
+    // }  
+
+
+    // Pattern 12 - Reverse Numbers
+// 1 2 3 4 5
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1
+// Analysis
+// Rows = 5
+
+// Columns = Decreasing
+
+// Print = j
+
+
+    // for(let i = 5; i >= 1; i--){
+    //     document.write("<br>");
+
+    //      for(let j = 1; j <= i; j++){
+    //         document.write(j);
+    //      }
+    // }
+
+    //     Pattern 13 - Reverse Row Numbers
+    // 5 5 5 5 5
+    // 4 4 4 4
+    // 3 3 3
+    // 2 2
+    // 1
+
+    // for(let i = 5; i >= 1; i--){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= i; j++){
+    //         document.write(i);
+    //       }
+    // }
+
+
+    // Pattern 14 - Floyd's Triangle
+    // 1
+    // 2 3
+    // 4 5 6
+    // 7 8 9 10
+    // 11 12 13 14 15
+     
+    // let num = 1;
+    // for(let i = 1; i <= 5; i++){
+    //     document.write("<br>");
+         
+    //       for(let j = 1; j <= i; j++){
+    //         document.write(num++);
+    //       }
+    // }
+
+    // Pattern 15 - 0-1 Pattern
+    // 1
+    // 0 1
+    // 1 0 1
+    // 0 1 0 1
+    // 1 0 1 0 1
+
+    // for(let i = 1; i <= 5; i++){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= i; j++){
+    //         document.write((i + j + 1) % 2 + " ");
+    //       }
+    // }
+
+    // Pattern 16 - Hollow Rectangle
+    // * * * * *
+    // *      *
+    // *      *
+    // * * * * *
+
+    // for(let i = 1; i <= 4; i++){
+    //     document.write("<br>");
+
+    //       for(let j = 1; j <= 5; j++)
+    //         if(i == 1||i == 4||j == 1||j == 5){
+    //             document.write("*");              
+    //       }else{
+    //         document.write("&nbsp;&nbsp;");
+    //       }
+    //}
+
+
+//     Pattern 17 - Pyramid
+//        *
+//      * * *
+//    * * * * *
+//  * * * * * * *
+// * * * * * * * * 
+
+//    for(let i = 1; i <= 5; i++){
+
+//     for(let j = 1; j <= 5 - i; j++){
+//       document.write("&nbsp;");
+//     }
+//     for(let k = 1; k <= (2 * i - 1); k++){
+//         document.write("*");
+//     }
+//     document.write("<br>");
+//    }
+
+
+
+// Pattern 18 - Inverted Pyramid
+// * * * * * * * * *
+//  * * * * * * *
+//    * * * * *
+//      * * *
+//        *
+   
+//   for(let i = 5; i >= 1; i--){
+//      document.write("<br>");
+//       for(let j = 1; j <= 5 - i; j++){
+//         document.write("&nbsp;&nbsp;");
+//     }
+//       for(let k = 1; k <= (2 * i - 1); k++){
+//         document.write("*");
+//       }
+//   }  
+
+// Pattern 19 - Diamond
+//        *
+//      * * *
+//    * * * * *
+//  * * * * * * *
+// * * * * * * * * *
+//  * * * * * * *
+//    * * * * *
+//      * * *
+//        *
+
+// for(let i = 1; i <= 5; i++){
+//     document.write("<br>");
+
+//      for(let j = 1; j <= 5 - i; j++){
+//         document.write("&nbsp;&nbsp;");
+
+//      }
+//      for(let k = 1; k <= (2 * i - 1); k++){
+//         document.write("*");
+//      }
+// }
+// for(let f = 5; f >= 1; f--){
+//     document.write("<br>");
+     
+//      for(let n = 1; n <= 5 - f; n++){
+//        document.write("&nbsp;&nbsp;");
+//      }
+//      for(let m = 1; m <= (2 * f - 1); m++){
+//         document.write("*");
+//      }
+// }
+
+// Pattern 20 - Butterfly
+// *               *
+// * *           * *
+// * * *       * * *
+// * * * *   * * * *
+// * * * * * * * * *
+
+// * * * * * * * * *
+// * * * *   * * * *
+// * * *       * * *
+// * *           * *
+// *               *
+
+
+// for(let i = 1; i <= 5; i++){
+//     document.write("<br>");
+
+//       for(let j = 1; j <= i; j++){
+//         document.write("*");
+//       }
+//       for(let k = 1; k < 2 * (5 - i); k++){
+//         document.write("&nbsp;&nbsp;");
+//       }
+
+//       for(let f = 1; f <= i; f++){
+//         if(f == 5){
+//             break;
+//         }
+//         document.write("*");
+//       }
+//       if(i == 5){
+//         for(let j = 1; j <= 5; j++){
+//             document.write("<br>");
+        
+//         for(let k = 5; k >= j; k--){
+//             document.write("*");
+//         }
+//         for(let k = 2; k <= j; k++){
+//             document.write("&nbsp;&nbsp;");
+//         }
+//         for(let k = 3; k <= j; k++){
+//             document.write("&nbsp;&nbsp;");
+//         }
+//         for(let k = 5; k >= j; k--){
+//         if(k == 1){
+//             break;
+//         }
+//         document.write("*");
+//       }
+//     }
+//   }  
+// }
+
+
+  // Program 1
+  // Print numbers from 1 to 10 using a while loop.
+
+  //  let i = 1;
+  //  while(i <= 10){
+  //     document.write("<br>");
+  //     document.write(i);
+  //     i++;
+  //  }
+
+//    Program 2
+//     Print numbers from 10 to 1 using a do...while loop.
+
+    //  let j = 10;
+    //   do{
+
+    //     document.write("<br>");
+
+    //     document.write(j);
+    //     j--;
+    //   }while(j >= 1);
+
+    //   Program 3
+    //   Print even numbers from 1 to 50 using a while loop.
+    
+    //   let k = 2;
+    //     while(k <= 50 && k % 2 == 0){
+    //         document.write("<br>");
+    //         document.write(k);
+    //         k+=2;
+    //     } 
+
+    // Program 4
+    //  Print odd numbers from 1 to 50 using a do...while loop.
+      
+    //  let i = 1;
+    //  do{
+    //     document.write(i + "<br>");
+    //     i += 2;
+    //  }while(i <= 50 && i % 2 != 0);
+
+    //  Program 5
+    // Print numbers from 1 to 20, but skip 10 using continue.
+     
+    // let i = 0;
+    // while(i <= 20){
+    //     i++;
+    //       if(i === 10){
+    //         continue;
+    //       }
+    //         document.write(i + "<br>");
+    // }
+
+    //  Program 6
+    //  Print numbers from 1 to 20, but stop at 15 using break.
+      
+    //   let j = 0;
+    //   while(j <= 20){
+    //     j++;
+    //       if(j === 16){
+    //         break;
+    //       }
+    //       document.write(j + "<br>");
+    //   }/
+
+    // Program 7
+    // Print this pattern:
+    // *
+    // **
+    // ***
+    // ****
+    // *****
+    
+    // let i = 1;
+    // while(i <= 5){
+    //     document.write("<br>");
+    //     let j = 1;
+    //     while(j <= i){
+    //         document.write("*");
+    //         j++;
+    //     }
+    //     i++;
+    // }
+
+    // Program 8
+    // Print this pattern:
+    // 1
+    // 12
+    // 123
+    // 1234
+    // 12345
+    
+    // let i = 1;
+    // while(i <= 5){
+    //     document.write("<br>");
+    //     let j = 1;
+    //       while(j <= i){
+    //         document.write(j);
+    //         j++;
+    //       }
+    //       i++;
+    // }
+    
+    // Practical Questions
+    //  Q1
+    //  Print  numbers from 1 to 100 using a while loop.
+
+    // let i = 1;
+    // while(i <= 100){
+    //     document.write(i + "<br>");
+    //     i++;
+    // }
+
+    // Q2
+    // Print numbers from 100 to 1 using a do...while loop.
+      
+    //  let i = 100;
+    //  do{
+    //     document.write(i + "<br>");
+    //     i--;
+    //  }while(i >= 1);
+
+    // Q3
+    // Print all even numbers from 1 to 100 using a while loop.
+       
+    //  let i = 2;
+    //   while(i <= 100 && i % 2 == 0){
+    //     document.write(i + "<br>");
+    //     i+=2;
+    //   }
+
+    // Q4
+    // Print all odd numbers from 1 to 100 using a do...while loop.
+        
+    // let i = 1;
+    // do{
+    //     document.write(i + "<br>");
+    //     i+=2;
+    // }while(i <= 100 && i % 2 != 0);
+
+    // Q5
+    // Print numbers from 1 to 50, but skip numbers divisible by 5.
+      
+    //  let i = 1;
+    //  while(i <= 50){
+    //      i++;
+    //        if(i % 5 == 0){
+    //         continue;
+    //     }
+    //     document.write(i + "<br>");
+    //  }
+
+    // Q6
+    //  Print numbers from 1 to 100, but stop when the number reaches 75.
+      
+    //  let i = 0;
+    //  while(i <= 100){
+    //     i++;
+    //       if(i === 76){
+    //         break;
+    //       }
+    //       document.write(i + "<br>");
+    //  }
+
+    // Q7
+    // Print the following Star Pattern:
+    // *
+    // **
+    // ***
+    // ****
+    // *****
+     
+    // let i = 1;
+    // while(i <= 5){
+    //     document.write("<br>");
+    //      let j = 1;
+    //       while(j <= i){
+    //         document.write("*");
+    //          j++;
+    //       }
+    //       i++
+    // }
+
+    // Q8
+    // Print the following Pattern:
+    // *****
+    // ****
+    // ***
+    // **
+    // *
+
+    // let i = 5;
+    // while(i >= 1){
+    //     document.write("<br>");
+
+    //       let j = 1;
+    //        while(j <= i){
+    //          document.write("*");
+    //           j++;
+    //        }
+    //         i--;
+    // }
+    
+    // Q9
+    //  Print the following Number Pattern:
+    //  1
+    //  12
+    //  123
+    //  1234
+    //  12345
+
+    // let i = 1;
+    // while(i <= 5){
+    //     document.write("<br>");
+
+    //       let j = 1;
+    //        while(j <= i){
+    //         document.write(j);
+    //          j++;
+    //        }
+    //        i++;
+    // }
+
+    // Q10
+    // Print the following Pattern:
+    // 11111
+    // 22222
+    // 33333
+    // 44444
+    // 55555
+     
+    //   let i = 1;
+    //    while(i <= 5){
+    //     document.write("<br>");
+
+    //      let j = 1;
+    //       while(j <= 5){
+    //        document.write(i);
+    //         j++;
+    //       }
+    //       i++;
+    //    }
+
+    
+    </script>
+</body>
+</html>
