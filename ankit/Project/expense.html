@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Expense Name</label>
+        <input type="text" id="exName">
+
+        <label>Amount</label>
+        <input type="number" id="amount">
+
+        <label>Date</label>
+        <input type="date" id="date">
+
+        <label>Categary</label>
+        <select name="" id="categary">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Bills</option>
+            <option>Other</option>
+        </select>
+        <button type="submit" id="btn" onclick="addExpense(event)">Add Expense</button>
+    </form>
+
+    <ul id="exList">
+
+    </ul>
+    <script src="exp.js"></script>
+</body>
+</html>

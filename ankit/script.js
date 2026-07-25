@@ -1,160 +1,219 @@
-// //
+// 1. Print numbers from 1 to 10. 
 // for(let i=1; i<=10; i++){
 //     console.log(i);
 // }
 
+
+// 2. Print even numbers from 2 to 20.
 // for(let i=2; i<=20; i+=2){
 //     console.log(i);
 // }
 
+// 3. Print the squares of numbers from 1 to 10. 
 // for(let i=1; i<=10; i++){
 //     console.log(i*i);
 // }
 
+
+// 4. Print the numbers from 10 to 1 in reverse order. 
 // for(let i=10; i>=1; i--){
 //     console.log(i);
 // }
 
+
+// 5. Print the first 10 multiples of 5. 
 // let num=5;
 // for(let i=1; i<=10; i++){
 //     console.log(num*i);
 // }
 
-
+// 6. Print all odd numbers between 1 and 30. 
 // for(let i=1; i<=30; i+=2){
 //     console.log(i);
 // }
 
-
+// 7. Print the table of 7 (i.e., 7, 14, 21, ..., up to 70). 
 // let num=7;
 // for(let i=1; i<=10; i++){
 //     console.log(num*i);
 // }
 
+// 8. Print numbers from 50 to 100 with a step of 5. 
 // for(let i=50; i<=100; i+=10){
 //     console.log(i);
 // }
 
-
+// 9. Print the sum of numbers from 1 to 100. 
 // let sum = 0;
 // for(let i=1; i<=100; i++){
 //     sum += i;
 // }
 // console.log(sum);
 
+//          <--  FOR Loop (7 Questions) -->
 
+// 1. Print numbers from 1 to 10 using a for loop. 
 // for(let i=1; i<=10; i++){
 //     console.log(i);
 // }
 
-
+// 2. Print even numbers between 1 and 20 using a for loop.
 // for(let i=1; i<=20; i++){
 //     if(i%2==0){
 //         console.log(i);
 //     }
 // }
 
+// 3. Print the multiplication table of 5 using a for loop.
 // let num=5;
 // for(let i=1; i<=10; i++){
 //     console.log(num*i);
 // }
 
-
+// 4. Print the square of numbers from 1 to 5 using a for loop. 
 // for(let i=1; i<=5; i++){
 //     console.log(i*i);
 // }
 
-
+// 5. Print numbers from 10 down to 1 using a for loop.
 // for(let i=10; i>=1; i--){
 //     console.log(i);
 // }
 
 
-
+// 6. Print all numbers between 1 to 50 that are divisible by 7 using a for loop. 
 // for(let i=1; i<=50; i++){
 //     if(i%7==0){
 //         console.log(i);
 //     }
 // }
 
-
+// 7. Calculate and print the sum of numbers from 1 to 100 using a for loop
 // let sum=0;
 // for(let i=1; i<=100; i++){
 //     sum += i;
 // }
 // console.log(sum);
 
+//                      <--  For Loop -->
 
-// for(let i=6; i<=60; i+=6){
-//     console.log(i);
-// }
+// 1. Print all multiples of 6 between 6 and 60 using a for loop 
+// Input: None 
+// Output: 6 12 18 24 30 36 42 48 54 60 
+// Explanation: This program prints all numbers between 6 and 60 that are divisible by 6. A for loop is used to go from 6 to 60, increasing by 6 each time. 
+    // for(let i=6; i<=60; i+=6){
+    //     console.log(i);
+    // }
 
-// let num = parseInt(prompt("Enter any number"));
-// let fact=1;
-// for(let i=num; i>=1; i--){
-//     fact *= i;
-// }
-// console.log(fact);
+// 2. Calculate the factorial of a number using a for loop 
+// Input: 5 
+// Output: Factorial = 120 
+// Explanation: The factorial of a number is the product of all positive integers up to that number. For 5, it is 5×4×3×2×1 = 120.
+    // let num = parseInt(prompt("Enter any number"));
+    // let fact=1;
+    // for(let i=num; i>=1; i--){
+    //     fact *= i;
+    // }
+    // console.log(fact);
 
+// 3. Count the number of digits in a number using a for loop 
+// Input: 7865 
+// Output: Number of digits = 4 
+// Explanation: This program divides the number by 10 repeatedly in a for loop and counts how many times it does this until the number becomes 0.
+        // let num = parseInt(prompt("Enter any number"));
+        // let count=0;
+        // for(let i=num; i>0; i=parseInt(i/10)){
+        //     count++;
+        // }
+        // console.log(count);
 
-// let num = parseInt(prompt("Enter any number"));
-// let count=0;
-// for(let i=num; i>=0; i=parseInt(i/10)){
-//     count++;
-// }
-// console.log(count);
+// 4. Display the square of numbers from 1 to N using a for loop 
+// Input: N = 5 
+// Output: 1 4 9 16 25 
+// Explanation: This program prints the square (number × number) of each number from 1 to N. 
+    // let num = parseInt(prompt("Enter any number"));
+    // for(let i=1; i<=num; i++){
+    //     console.log(i*i);
+    // }
 
+// 5. Print the Fibonacci series up to N terms using a for loop 
+// Input: N = 7 
+// Output: 0 1 1 2 3 5 8 
+// Explanation: The Fibonacci series starts with 0 and 1, and each number after that is the sum of the previous two. This continues N times.
 
-// let num = parseInt(prompt("Enter any number"));
-// for(let i=1; i<=num; i++){
-//     console.log(i*i);
-// }
+    //  let num = parseInt(prompt("N = "));
+    //  let a = 0, b = 1, nextTerm;
 
+    //  for(let i = 0; i < num; i++){
+    //      if(i <= 1){
+    //          nextTerm = i;
+    //      } else {
+    //          nextTerm = a + b;
+    //          a = b;
+    //          b = nextTerm;
+    //      }
+    //      console.log(nextTerm);
+    //  }
 
-// let sum=0;
-// for(let i=1; i<=50; i++){
-//     if(i%2 !=0){
-//         sum += i;
-//     }
-// }
-// console.log(sum);
+// 6. Find the sum of all odd numbers from 1 to 50 using a for loop 
+// Input: None 
+// Output: Sum = 625 
+// Explanation: This program checks if each number between 1 and 50 is odd, and if it is, adds it to the sum. 
+    // let sum=0;
+    // for(let i=1; i<=50; i++){
+    //     if(i%2 !=0){
+    //         sum += i;
+    //     }
+    // }
+    // console.log(sum);
 
+// 7. Count how many times digit 7 appears in a number using a for loop 
+// Input: 707127 
+// Output: Count = 3 
+// Explanation: This program extracts each digit from the number using a loop and checks if it’s 7. If it is, it increases the count. 
+    // let num = parseInt(prompt("Enter any number"));
+    // let count = 0;
+    // for(let i=num; i>0; i=parseInt(i/10)){
+    //     let digit = i%10;
+    //     if(digit == 7){
+    //         count++;
+    //     }
+    // }
+    // console.log(count);
 
+// 8. Count and display how many numbers between 1 and 100 are divisible by 7 using a for loop 
+// Input: None 
+// Output: Count = 14 
+// Explanation: This program loops through numbers from 1 to 100, checks if each number is divisible by 7, and keeps a count of how many such numbers exist. 
+    // let count=0;
+    // for(let i=1; i<=100; i++){
+    //     if(i%7==0){
+    //         count++;
+    //     }
+    // }
+    // console.log(count);
 
-// let num = parseInt(prompt("Enter any number"));
-// let count = 0;
-// for(let i=num; i>0; i=parseInt(i/10)){
-//     let digit = i%10;
-//     if(digit == 7){
-//         count++;
-//     }
-// }
-// console.log(count);
+// 9. Find the sum of all multiples of 4 from 1 to 40 using a for loop 
+// Input: None 
+// Output: Sum = 220 
+// Explanation: This program goes through numbers from 1 to 40 and adds them if they are divisible by 4. 
+    // let sum=0;
+    // for(let i=1; i<=40; i++){
+    //     if(i%4 == 0){
+    //         sum += i;
+    //     }
+    // }
+    // console.log(sum);
 
-
-// let count=0;
-// for(let i=1; i<=100; i++){
-//     if(i%7==0){
-//         count++;
-//     }
-// }
-// console.log(count);
-
-
-// let sum=0;
-// for(let i=1; i<=40; i++){
-//     if(i%4 == 0){
-//         sum += i;
-//     }
-// }
-// console.log(sum);
-
-
-// for(let i=10; i<=50; i++){
-//     if(i%2 != 0 && i%3 != 0 && i%5 != 0 && i%7 != 0){
-//         console.log(i);
-//     }
-// }
+// 10. Display all prime numbers between 10 and 50 using a for loop 
+// Input: None 
+// Output: 11 13 17 19 23 29 31 37 41 43 47 
+// Explanation: A prime number has only two factors: 1 and itself. The program checks each number between 10 and 50 to see if it's prime. 
+    // for(let i=10; i<=50; i++){
+    //     if(i%2 != 0 && i%3 != 0 && i%5 != 0 && i%7 != 0){
+    //         console.log(i);
+    //     }
+    // }
 
 
 
