@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+         
+    // Easy Level (1–10)
+    // 1. Greeting Function
+    // Create a function greet(name) that prints:
+    // Hello, John!
+
+    // function greet(){
+    //     console.log("hello John");
+    // }
+    //     greet();
+
+    // 2. Add Two Numbers
+    //  Create a function that accepts two numbers and returns their sum.
+
+    //  function add(a,b){
+    //      console.log(a + b);
+    //  }
+    //    add(10,20);
+
+    //   3. Subtract Two Numbers
+    //   Create a function that returns the subtraction of two numbers.
+     
+    //   function Subtract(a,b){
+    //     console.log(a - b);
+    //   }
+    //    Subtract(50,10);
+
+    //    4. Multiply Two Numbers
+    //    Create a function that returns the multiplication of two numbers.
+        
+    // function Multiply(a,b){
+    //     console.log(a * b);
+    // }
+    // Multiply(10,2);
+      
+    // 5. Divide Two Numbers
+    // Create a function that returns the division of two numbers.
+      
+    // function division(a,b){
+    //     console.log(a % b);
+    // }
+    // division(73,2);
+
+    // 6. Check Even or Odd
+    // Create a function that checks whether a number is even or odd.
+     
+    // function checkEvenOdd(num){
+    //     if(num % 2 === 0){
+    //       document.write(num + " is Even");
+    //     }
+    //     else{
+    //         document.write(num + " is Odd");
+    //     }
+    // }
+    //   checkEvenOdd(15);
+
+    //   7. Check Positive, Negative, or Zero
+    //   Create a function that identifies whether a number is positive, negative, or zero.
+
+    //   function CheckPosNeg(num){
+    //     if(num > 0){
+    //         document.write(num + " is Positive");
+    //        }
+    //          else if(num < 0){
+    //             document.write(num + " is Negative");
+    //           }
+    //            else{
+    //             document.write(num + " is Zero");
+    //            }
+    //   }
+
+    //   CheckPosNeg(0);
+
+    // 8. Find the Larger of Two Numbers
+    //  Create a function that returns the larger of two numbers.
+
+    //   function largerNo(a,b){
+    //     if(a > b){
+    //         document.write("larger no is A :- " + a);
+    //     }
+    //       else{
+    //         document.write("larger no is B :- " + b)
+    //      }
+    //   }
+    //      largerNo(10,20);
+
+    //  9. Find the Largest of Three Numbers
+    //  Create a function that returns the largest among three numbers.
+        
+    // function largerNo(a,b,c){
+    //     if(a>b && a>c){
+    //         document.write("Largest no A :- " + a);
+    //     }
+    //      else if(b>a && b>c){
+    //         document.write("Largest no B :- " + b);
+    //      }
+    //        else{
+    //              document.write("Lagest no C :- " + c);
+    //        }
+    //   }
+    //    largerNo(100,50,30);
+
+    //    10. Check Leap Year
+    //    Create a function that checks whether a given year is a leap year.
+
+    //  function leapYear(num){
+    //     if(num % 4 == 0){
+    //         document.write("leap year "+ num);
+    //     }
+    //      else{
+    //         document.write("Not a leap year "+ num);
+    //      }
+    //  }
+    //   leapYear(2025);
+
+    // Medium Level (11–20)
+    // 11. Calculate Factorial
+    // Create a function to find the factorial of a number.
+    // Example:
+    // Input: 5
+    // Output: 120
+
+    // function factorial(num){
+    //     let fact = 1;
+    //      for(let i = 1; i <= num; i++){
+    //         fact = fact * i;
+    //      }
+    //      document.write(num + " = " + fact)
+    // }
+    //  factorial(5);
+
+    //  12. Print Multiplication Table
+    //  Create a function that prints the multiplication table of a given number (1–10).
+       
+    //  function multiplication(num){
+    //      for(let i = 1; i <= 10; i++){
+    //         document.write(num + " * " + i + " = " + (num * i) + "<br>");
+    //      }
+    //  }
+    //   multiplication(5);
+
+    //   Create a function that returns the sum of the first N natural numbers.
+    //     Example:
+    //     Input: 10
+    //     Output: 55
+    //     Multiplication Table
+           
+    //   function sum(num){
+    //     let total = 0;
+    //     for(let i = 1; i <= num; i++){
+    //         total = total + i;
+    //      }
+    //     document.write("sum = " + total);
+    //   }
+    //    sum(10);
+      
+    // 14. Reverse a Number
+    // Create a function to reverse a given number.
+    // Example:
+    // Input: 12345
+    // Output: 54321
+     
+    // function reverse(num){
+    //     let rev = 0;
+    //     while(num > 0){
+    //         let rem = num % 10;
+    //         rev = rev * 10 + rem;
+    //         num = Math.floor(num / 10);
+    //     }
+    //     document.write("Reverse no is " + rev);
+    // }
+
+    // reverse(12345);
+
+    // 15. Count Digits
+    // Create a function that counts the number of digits in a given number.
+    // Example:
+    // Input: 987654
+    // Output: 6
+
+    //  function Count(num){
+    //    let count = 0;
+    //     while(num > 0){
+    //         count++;
+    //           num = Math.floor(num/10);
+    //     }
+    //     document.write("total count " + count);
+    //  }
+    //   Count(987654);
+
+    // 16. Sum of Digits
+    // Create a function that returns the sum of all digits in a number.
+    // Example:
+    // Input: 456
+    // Output: 15
+      
+    //   function sumDigit(num){
+    //     let sum = 0;
+    //      while(num > 0){
+    //         let digit = num % 10;
+    //         sum = sum + digit;
+    //         num = Math.floor(num/10);
+    //      }
+    //      document.write("Sum of digit " + sum);
+    //   }  
+    //    sumDigit(4562);
+
+
+    // 17. Check Palindrome Number
+    // Create a function to check whether a number is a palindrome.
+    // Example:
+    // Input: 121
+    // Output: Palindrome
+
+    //   let num = parseInt(prompt("Enter Input"));
+    //   let reverse = 0;
+    //   function palindrome(num){
+    //     let rem = 0;
+    //     for(let i = num; i > 0; i = parseInt(i / 10)){    // i/10 
+    //         rem = i % 10;
+    //         reverse = reverse * 10 + rem; 
+    //     }
+    //     if(num == reverse){
+    //         document.write(" palindrome ");
+    //     }
+    //     else{
+    //         document.write(" not palindrome ");
+    //     }
+    //   }
+        
+    //    palindrome(num);
+
+    // 18. Check Prime Number
+    // Create a function that checks whether a number is prime.
+
+    // let num = prompt("Enter any no");
+    //  function PrimeNo(num){
+    //     if(num % 2 == 0){
+    //         document.write("Prime Number");
+    //     }
+    //     else{
+    //         document.write("Not Prime");
+    //     }
+    //  }
+    //  PrimeNo(num);
+
+    // 19. Print Fibonacci Series
+    // Create a function that prints the Fibonacci series up to N terms.
+    // Example:
+    // Input: 8
+    // Output: 0 1 1 2 3 5 8 13
+      
+    //  let num = prompt("Enter any no");
+    //   function Fibonacci(n){
+    //     let a = 0;
+    //     let b = 1;
+    //      for(let i = 1; i <= n; i++){
+    //          document.write(a + " ");
+    //         let c = a + b;
+    //          a = b;
+    //          b = c;
+    //      }
+    //   }
+    //    Fibonacci(num);
+    // 20. Check Armstrong Number
+    // Create a function that checks whether a number is an Armstrong number.
+    // Example:
+    // Input: 153
+    // Output: Armstrong
+    
+    //  let n = prompt("Enter your no")
+    //   function Armstrong(num){
+    //     let temp = num;
+    //     let sum = 0;
+
+    //       for(; num > 0; num = Math.floor(num / 10)){
+    //         let rem = num % 10;
+    //         sum = sum + rem*rem*rem;
+    //       }
+    //        if(temp == sum){
+    //         document.write(temp + " Armstrong no");
+    //          }
+    //           else{
+    //             document.write(temp + " Not a Armstrong no");
+    //              }
+    //     }
+    //      Armstrong(n);
+
+
+    //Hard Level (21–30)
+    
+    //21. Print Even Numbers in a Range
+    //Create a function that prints all even numbers between two given numbers.
+
+    // let n = prompt("Enter your range");
+    // let x = prompt("Enter 2nd range")
+    // function EvenNo(a,b){
+
+    //     for(let i = a; i <= b; i++){
+    //         if(i % 2 == 0){
+    //             document.write(i + "<br>");
+    //         }
+    //     }
+    // }
+    //  EvenNo(n,x);
+
+    // 22. Print Odd Numbers in a Range
+    //  Create a function that prints all odd numbers between two given numbers.
+
+    // let n = prompt("Enter first range");
+    // let x = prompt("Enter 2nd range");
+
+    //  function OddNo(a,b){
+
+    //     for(let i = a; i <= b; i++){
+
+    //         if(i % 2 != 0){
+    //             document.write(i + "<br>");
+    //         }
+    //     }
+    //  }
+    //   OddNo(n,x);
+
+    // 23. Count Even Numbers in a Range
+    // Create a function that returns the total number of even numbers within a given range.
+
+    // let n = prompt("Enter 1st range");
+    // let x = prompt("Enter 2nd rsnge");
+
+    //  function CountEven(a,b){
+
+    //     let count = 0;
+    //       for(let i = a; i <= b; i++){
+
+    //         if(i % 2 == 0){
+    //             count++;
+    //             document.write(i + "<br>");
+    //         }
+    //       }
+    //       document.write("total count of even numbers " + count);
+    //  }
+    //   CountEven(n,x);
+
+    // 24. Count Odd Numbers in a Range
+    //  Create a function that returns the total number of odd numbers within a given range.
+
+    //   let n = prompt("Enter 1st Number");
+    //   let x = prompt("Enter 2nd Number");
+
+    //    function CountOdd(a,b){
+
+    //     let count = 0;
+    //      for(let i = a; i <= b; i++){
+    //          count++;
+    //          if(i % 2 != 0){
+    //             document.write(i + "<br>");
+
+    //         }
+    //      }
+    //      document.write("Total count of Odd numbers " + count);
+    //    }
+
+    //    CountOdd(n,x);
+
+    // 25. Sum of Even Numbers
+    // Create a function that returns the sum of all even numbers within a given range.
+    
+    // let n = Number(prompt("Enter 1st range"));
+    // let x = Number(prompt("Enter 2nd range"));
+
+    // function SumEven(a,b){
+    //     let sum = 0;
+    //     for(let i = a; i <= b; i++){
+             
+    //         if(i % 2 == 0){
+    //             document.write(i + "<br>");
+    //             sum += i;
+    //         }
+    //     }
+    //     document.write("Sum of all numbers " + sum);
+    // }
+    // SumEven(n,x);
+
+    // 26. Sum of Odd Numbers
+    // Create a function that returns the sum of all odd numbers within a given range.
+
+    //  let n = parseInt(prompt("Enter 1st rsnge "));
+    //  let x = parseInt(prompt("Enter 2nd range "));
+
+    //    function SumOdd(a,b){
+    //     let sum = 0;
+    //      for(let i = a; i <= b; i++){
+    //         if(i % 2 != 0){
+    //             document.write(i + "<br>");
+    //             sum += i;
+    //         }
+    //     }
+    //     document.write("Sum of all Odd numbers " + sum);
+    //  } 
+    //  SumOdd(n,x);
+
+    // 27. Print Prime Numbers in a Range
+    // Create a function that prints all prime numbers between two given numbers.
+
+    // let n = parseInt(prompt("Enter 1st rsnge "));
+    // let x = parseInt(prompt("Enter 2nd range "));
+
+    //  function SumPrime(a,b){
+    //     for(let i = a; i <= b; i++){
+    //         if(i >= 0){
+    //             document.write(i + " Number is a Prime" + "<br>")
+    //         }
+    //         else{
+    //              document.write(i + " Not Prime" + "<br>");
+    //         }
+    //     }
+    //  }
+    //   SumPrime(n,x);
+
+    // 28. Find the Greatest Common Divisor (GCD)
+    // Create a function that returns the GCD of two numbers.
+    // Example:
+    // Input: 24, 36
+    // Output: 12
+
+    // let n = parseInt(prompt("Enter Starting range"));
+    // let x = parseInt(prompt("Enter Second range"));
+
+    // function GCD(a,b){
+    //     let gcd = 1;
+    //     for(let i = 1; i <= Math.min(a,b); i++){
+    //         if(a % i == 0 && b % i == 0){
+    //             gcd = i;
+    //         }
+    //     }
+    //     document.write("GCD " + gcd);
+    // }
+    // GCD(n,x);
+
+    // 29. Find the Least Common Multiple (LCM)
+    // Create a function that returns the LCM of two numbers.
+    // Example:
+    // Input: 12, 18
+    // Output: 36
+
+    // let n = parseInt(prompt("Enter Starting range"));
+    // let x = parseInt(prompt("Enter Second range"));
+    
+    // function LCM(a,b){
+    //     let lcm = 0;
+    //      for(let i = Math.max(a,b); ; i++){
+    //         if(i % a == 0 && i % b == 0){
+    //             lcm = i;
+    //             break;
+    //         }
+    //      }
+    //      document.write("LCM " + lcm);
+    // }
+    // LCM(n,x);
+
+    // 30. Build a Simple Calculator
+    // Create a function:
+    // calculator(num1, num2, operator)
+    // The function should perform:
+    // Addition (+)
+    // Subtraction (-)
+    // Multiplication (*)
+    // Division (/)
+    // Modulus (%)
+    // Use a switch statement to perform the selected operation.
+
+    // let num1 = parseFloat(prompt("Enter first number "));
+    // let num2 = parseFloat(prompt("Enter second number"));
+    // let sign = prompt("Enter sign :-   + , - , * , / , %")
+
+    // function Calculator(a,b,operator){
+    //     switch(operator){
+    //         case "+":
+    //           document.write("Addition = " + (a + b));
+    //            break;
+
+    //           case "-":
+    //             document.write("Subtraction = " + ( a - b));
+    //               break;
+
+    //              case "*":
+    //                 document.write("Multiplication = " + (a * b));
+    //                   break;
+
+    //                 case "/":
+    //                     document.write("Division = " + (a / b));
+    //                       break;
+
+    //                     case "%":
+    //                         document.write("Modulus = " + (a % b));
+    //                           break;
+
+    //                           default:
+    //                             document.write("Invalid Operator ")
+    //                               break;
+    //     }
+    // }
+    // Calculator(num1,num2,sign);
+
+
+    </script>
+</body>
+</html>
