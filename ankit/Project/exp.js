@@ -14,8 +14,19 @@ function addExpense(e){
         date: date,
         categary: categary
     }
+    if(name == "" || amount == "" || date == "" || categary == ""){
+        alert("Please fill all fields!");
+        return;
+    }
 
-    store.push(data);
+    if(editIndex !== null){
+        store[editIndex] = data;
+        editIndex = null;
+        document.getElementById("btn").innerText = "Add Employee";
+    }
+    else{
+        store.push(data);
+    }
     showExpense();
 
     document.getElementById("exName").value = "";
@@ -29,8 +40,16 @@ function showExpense(){
     let result = "";
     store.map((data, index)=>{
         result += `
-            <li>${data.exName}: ${data.amount} ${data.date} ${data.categary} 
-            <button onclick=deleteExpense(${index})>Delete</button></li>
+            <tr>
+                <td>${data.exName}</td> 
+                <td>${data.amount}</td>
+                <td>${data.date}</td> 
+                <td>${data.categary}</td>
+                <td>
+                    <button onclick=deleteExpense(${index})>Delete</button>
+                    <button onclick=editExpense(${index})>Edit</button>
+                </td>
+            <tr>
         `;
     });
     list.innerHTML = result;
@@ -40,4 +59,15 @@ function deleteExpense(idx){
     editIndex = idx;
     store.splice(idx,1);
     showExpense();
+}
+
+function editExpense(idx){
+    editIndex = idx;
+
+    document.getElementById("exName").value = store[idx].exName;
+    document.getElementById("amount").value = store[idx].amount;
+    document.getElementById("date").value = store[idx].date;
+    document.getElementById("categary").value = store[idx].categary;
+
+    document.getElementById("btn").innerText = "Update Employee";
 }
