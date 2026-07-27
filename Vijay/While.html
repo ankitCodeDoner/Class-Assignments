@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//Program 1
+// Print numbers from 1 to 10 using a while loop.
+
+// let i = 1;
+// while (i<=10){
+//     console.log(i);
+//  i++;
+// }
+
+// Program 2
+// Print numbers from 10 to 1 using a do...while loop.
+
+// let i = 10;
+// do{
+//     console.log(i);
+//     i--;
+// }
+// while(i>=1);
+
+// Program 3
+// Print even numbers from 1 to 50 using a while loop.
+
+// let i =1;
+// while(i<=50){
+//     if(i%2==0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+
+// Program 4
+// Print odd numbers from 1 to 50 using a do...while loop.
+
+// let i = 1;
+// do{
+//     if(i%2!=0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+// while(i<=50);
+
+// Program 5
+// Print numbers from 1 to 20, but skip 10 using continue.
+
+// for(let i=1;i<=20;i++){
+//  if(i===10){
+//     continue;
+//  }
+//  console.log(i);
+// }
+
+// Program 6
+// Print numbers from 1 to 20, but stop at 15 using break.
+
+// for(let i=1;i<=20;i++){
+//     if(i===15){
+//         break;
+//     }
+//     console.log(i);
+// }
+
+// Program 7
+// Print this pattern:
+// *
+// **
+// ***
+// ****
+// *****
+
+// let row=1;
+// while(row<=5){
+//     document.write("<br>");
+//     let col=1;
+//     while(col<=row){
+//         document.write("*");
+//         col++;
+//     }
+//     row++;
+// }
+
+// Program 8
+// Print this pattern:
+// 1
+// 12
+// 123
+// 1234
+// 12345
+
+// let i=1;
+// while(i<=5){
+//     document.write("<br>");
+//     let j=1;
+//     while(j<=i){
+//         document.write(j);
+//         j++;
+//     }
+//     i++;
+// }
+
+// Practical Questions
+// Q1
+// Print numbers from 1 to 100 using a while loop.
+
+// let i=1;
+// while(i<=100){
+//     console.log(i);
+//     i++;
+// }
+
+// Q2
+// Print numbers from 100 to 1 using a do...while loop.
+
+// let i=100;
+// do{
+//     console.log(i);
+//     i--;
+// }
+// while(i>=1);
+
+// Q3
+// Print all even numbers from 1 to 100 using a while loop.
+// let i =1;
+//  while(i<=100){
+//     if(i%2==0){
+//         console.log(i);
+//     }
+//     i++;
+//  }
+ 
+
+// Q4
+// Print all odd numbers from 1 to 100 using a do...while loop.
+
+// let i =1;
+// do{
+//     if(i%2!=0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+// while(i<=100);
+
+// Q5
+// Print numbers from 1 to 50, but skip numbers divisible by 5.
+
+// let i=1;
+// while(i<=50){
+//     if(i%5!=0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+
+// Q6
+// Print numbers from 1 to 100, but stop when the number reaches 75.
+
+// let i=1;
+// while(i<=100){
+//     if(i===75){
+//         break;
+//     }
+//     console.log(i); 
+//     i++;
+// }
+
+// Q7
+// Print the following Star Pattern:
+// *
+// **
+// ***
+// ****
+// *****
+
+// let i=1;
+// while(i<=5){
+//     document.write("<br>");
+//     let j=1;
+//     while(j<=i){
+//         document.write("*");
+//         j++;
+//     }
+//     i++;
+// }
+
+// Q8
+// Print the following Pattern:
+// *****
+// ****
+// ***
+// **
+// *
+
+// let i=5;
+// while(i>=1){
+//     document.write("<br>");
+//     let j=i;
+//     while(j>=1){
+//         document.write("*");
+//         j--;
+//     }
+//     i--;
+// }
+
+// Q9
+// Print the following Number Pattern:
+// 1
+// 12
+// 123
+// 1234
+// 12345
+
+// let i=1;
+// while(i<=5){
+//     document.write("<br>");
+//     let j=1;
+//     while(j<=i){
+//         document.write(j);
+//         j++;
+//     }
+//     i++;
+// }
+
+// Q10
+// Print the following Pattern:
+// 11111
+// 22222
+// 33333
+// 44444
+// 55555
+
+// let i=1;
+// while(i<=5){
+//     document.write("<br>");
+//     let j=1;
+//     while(j<=5){
+//         document.write(i);
+//         j++;
+//     }
+//     i++;
+// }
+
+
+
+// Print numbers from 10 down to 1 using a while loop. 
+
+// let i=10;
+// while(i>=1){
+//     console.log(i);
+//     i--;
+// }
+
+// Ask the user to enter a number and print all numbers from 1 to that number using a while loop. 
+
+// let num = parseInt(prompt("enter number"));
+// let i=1;
+// while(i<=num){
+//     console.log(i);
+//     i++;
+// }
+
+// Print the first 10 multiples of 3 using a while loop. 
+
+// let i = 1;
+// while(i<=30){
+//     if(i%3==0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+
+// Print numbers from 1 to 50 that are divisible by 5 using a while loop. 
+
+// let i=1;
+// while(i<=50){
+//     if(i%5==0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+
+// DO-WHILE Loop  
+
+// Keep asking the user to enter a number until they enter a number greater than 50. 
+
+// let num; 
+// do{
+//    num = parseInt(prompt("enter number"));
+// }
+// while(num <=50);
+//     document.write("your entered: " +num);
+
+// Ask the user to type "exit" to stop the program. Keep asking until they do. 
+
+//  let text; 
+// do{
+//    text = prompt("enter text");
+// }
+// while(text !== "exit");
+//     document.write("Program Stoped");
+
+// Ask the user to guess a secret number (e.g., 7) until they guess correctly. 
+
+
+// let num; 
+// do{
+//    num = parseInt(prompt("guess a secret number"));
+// }
+// while(num !==7);
+//     document.write("guess correctly " +num);
+
+// Ask the user to enter a password. Repeat until the correct password is entered. 
+
+// let num; 
+// do{
+//    num = parseInt(prompt("enter password"));
+// }
+// while(num !== 1234);
+//     document.write("correct password  " +num);
+
+// Do While Questions 
+
+ 
+
+// 1. Keep asking the user to enter a password until the correct one is entered using a do-while loop 
+// Input: (User enters: 1234, then admin123) 
+// Output: 
+// Wrong password. Try again. 
+// Correct password entered! 
+// Explanation: This program keeps asking for the password until the user enters the correct one (like "admin123"). The loop runs at least once and checks every time if the entered password is correct. 
+
+//  let text;
+// do{
+//    text = prompt("enter password");
+// }
+// while(text !== admin123);
+//     document.write("correct password  " +text);
+// // document.write("Wrong Password. Try Again");
+    
+
+// 2. Keep adding numbers entered by the user until the user enters 0 using a do-while loop 
+// Input: 5, 3, 2, 0 
+// Output: Total sum = 10 
+// Explanation: The user keeps entering numbers, and the program adds them. When the user types 0, the loop ends and shows the final sum. 
+
+//  let num;
+//  let sum=0; 
+// do{
+//    num = parseInt(prompt("enter number"));
+//    sum += num;
+// }
+// while(num !==0);
+//     document.write("your entered: " +sum);
+
+// 3. Take a number from the user and keep asking until a positive number is entered using a do-while loop 
+// Input: -5, 0, -1, 7 
+// Output: You entered a positive number: 7 
+// Explanation: This loop keeps asking for input until the user finally gives a number greater than 0. Negative and zero values are not accepted. 
+
+ 
+//  let num; 
+// do{
+//    num = parseInt(prompt("enter a positive number"));
+// }
+// while(num <=0);
+//     document.write("you entered a positive number: " + num);
+
+// 4. Calculate the sum of squares of numbers from 1 to N using a do-while loop 
+// Input: N = 4 
+// Output: Sum of squares = 30 
+// Explanation: The squares are: 1² = 1, 2² = 4, 3² = 9, 4² = 16 
+// Total = 1 + 4 + 9 + 16 = 30 
+
+
+// let num = 4;
+// let sum=0;
+// let i=1; 
+// do{
+//    num = parseInt(prompt("enter a number"));
+//    sum += i*i;
+//    i++;
+// }
+// while(i <= num );
+//     document.write("sum of squares" +sum);
+
+
+// 5. Find the average of numbers entered by the user until they enter -1 using a do-while loop 
+// Input: 10, 20, 30, -1 
+// Output: Average = 20.0 
+// Explanation: The loop keeps collecting numbers and calculates the average at the end. -1 is used to stop the loop and is not included in the average. 
+
+//  let sum =0;
+//  let count = 0;
+//  let num;
+//  do{
+//     num = Number(prompt("enter a number (-1 to stop):"));
+//     if(num != -1){
+//         sum =sum + num;
+//         count++;
+//     }
+//  }while(num != -1);
+//  if(count >0){
+//     let average = sum / count;
+//     document.write("average = " + average);
+    
+//  }else {
+//     document.write("no numbers entered");
+//  }
+
+// 6. Simulate a simple login system that gives the user 3 attempts using a do-while loop 
+// Input: (Wrong password 2 times, then correct password) 
+// Output: 
+// Attempt 1: Wrong password 
+// Attempt 2: Wrong password 
+// Attempt 3: Login successful 
+// Explanation: This program allows the user to enter the password 3 times. If the correct password is entered, it exits early. 
+
+ 
+//  let text;
+//  let Attempt = 1;
+// do{
+//    text = prompt("enter password");
+
+// if(text === "admin123"){
+//     document.write("Attempt" + Attempt + ": login successful");
+//     break;
+// } else {
+//     document.write("Attempt" + Attempt + ": Password <br>");
+
+// }
+// Attempt++;
+// } while(Attempt <=3);
+//  if(Attempt > 3 && text !== "admin123") {
+//     document.write("account locked")
+//  }
+
+
+
+// 7. Keep multiplying a number by 2 until it becomes greater than 1000 using a do-while loop 
+// Input: Start = 5 
+// Output: 5 10 20 40 80 160 320 640 1280 
+// Explanation: Starting from 5, the number is doubled each time. The loop stops when the number becomes more than 1000. 
+
+//  let num =5;
+//  document.write("Numbers: ");
+//  do{
+//      document.write(num+" ");
+//      num = num *2;
+//  } while(num <=1000);
+//  document.write(num);
+
+// 8. Keep asking the user to input a character until they input “exit” and check if it is a vowel or consonant using a do-while loop 
+// Input: a, b, e, exit 
+// Output: 
+// 'a' is a vowel 
+// 'b' is a consonant 
+// 'e' is a vowel 
+// Explanation: The loop continues until the user types "exit". For each letter, the program checks if it is a vowel (a, e, i, o, u) or a consonant. 
+
+//   let text; 
+//   let vowels = ['a','e','i','o','u'];
+// do{
+//    text = prompt("enter a letter");
+
+//    if(text != "exit") {
+//     if(vowels.includes(text)){
+//         document.write(`'${text}' is a vowel <br>`);
+//     }else {
+//         document.write(`'${text}' is a consonant <br>`);
+//     }
+//     }else {
+//         document.write('exiting program');
+        
+//     }
+//    }
+
+// while(text !== "exit");
+    
+
+
+// 9. Ask the user to enter 5 numbers one by one using a do-while loop 
+// Input: 3, 6, 2, 9, 4 
+// Output: You entered: 3 6 2 9 4 
+// Explanation: The program uses a do-while loop to collect exactly 5 numbers from the user and then displays them. 
+
+//  let count =0;
+//  let num = [];
+//  do{
+//     let input = prompt("enter numbers ");
+//     num.push(input);
+//     count++;
+//  } while(count < 5);
+//      document.write("you entered : " + num.join(" "));
+
+
+// 10. Keep asking the user to enter an even number. If odd, ask again using a do-while loop 
+// Input: 3, 7, 10 
+// Output: 
+// 3 is odd. Try again. 
+// 7 is odd. Try again. 
+// 10 is even. Thank you! 
+// Explanation: The loop continues until the user enters a number that is divisible by 2 (even number). 
+
+//  let number;
+
+//     do {
+//         number = parseInt(prompt("Enter an even number:"));
+
+//         if (number % 2 !== 0) {
+//             console.log(number + " is odd. Try again.");
+//         } else {
+//             console.log(number + " is even. Thank you!");
+//         }
+//     } while (number % 2 !== 0);
+ 
+
+    </script>
+</body>
+</html>
