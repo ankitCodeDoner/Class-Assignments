@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//1. 
+//  Create an array of 10 numbers
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (let i = 0; i < numbers.length; i++) {
+//     console.log(numbers[i]);
+// }
+
+
+
+//2.
+// let fruits = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew", "kiwi", "lemon"];
+
+// console.log(fruits[0]);
+// console.log(fruits[4]);
+
+
+//3.
+// let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+// fruits.push("Pineapple");
+// console.log(fruits);
+
+//4.
+// let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+// fruits.pop();
+// console.log(fruits);
+
+//5.
+//  let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+//  fruits.unshift("Pineapple");
+//  console.log(fruits);       
+
+//6.
+// let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+// fruits.shift();
+// console.log(fruits);
+
+//7.
+// let fruits = ["Apple", "Banana", "Mango"];
+// console.log(fruits.indexOf("Apple")); 
+
+//8.
+// let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+// console.log(fruits.includes ("Mango"));
+
+//9.
+// let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+// console.log(fruits.reverse());
+
+//10.
+// let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+// console.log(fruits.sort());
+
+//11.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let evenNumbers = numbers.filter(function(num) {
+//     return num % 2 === 0;
+// });
+// console.log(evenNumbers);
+
+//12.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let oddnumbers = numbers.filter(function(num) {
+//     return num % 2 !== 0;
+// });
+// console.log(oddnumbers);
+
+//13.
+// let students = [
+//     { name: "John", age: 20 },
+//     { name: "Jane", age: 22 },
+//     { name: "Mike", age: 19 },
+//     { name: "Emily", age: 21 }
+//     ];
+//     let uppercase = students.map(function(student) {
+//         return student.name.toUpperCase();
+//     });
+//     console.log(uppercase);
+
+//14.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let squares = numbers.map(function(num) {
+//     return num * num;
+// });
+// console.log(squares);
+
+//15.
+// let numbers = [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+// let greaterThan50 = numbers.filter(function(num) {
+//     return num > 50;
+// });
+// console.log(greaterThan50);
+
+//16.
+// let num = [ 50, 75, 100, 125, 150, 175, 200, 225, 250, 275];
+// let index = num.findIndex(function(num) {
+//     return num >100;
+// });
+// console.log(index);
+
+//17.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let positive = numbers.every(function(num) {
+//     return num > 0;
+// });
+// console.log(positive);  
+
+//18.
+// let numbers = [1, 2, 3, 4, 5, -6, 7, 8, 9, 10];
+// let negativenumbers = numbers.some(function(num) {
+//     return num < 0;
+// });
+// console.log(negativenumbers);   
+
+//19.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let sum = numbers.reduce(function(total, num) {
+//     return total + num;
+// });
+// console.log(sum);
+
+//20.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let product = numbers.reduce(function(a, b) {
+//     return a * b;
+// });
+// console.log(product);
+
+//21.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let merged = numbers.concat([11, 12, 13, 14, 15]);
+// console.log(merged);
+
+
+//22.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let sliced = numbers.slice(2, 5);
+// console.log(sliced);
+
+//23.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let spliced = numbers.splice(3, 4);
+// console.log(spliced);
+
+//24.
+// let skills = ["HTML", "CSS", "JavaScript", "Python", "Java"];
+// skills.splice(2, 0, "c++", "c#");
+// console.log(skills);
+
+
+
+
+
+
+//1Create an object named student with the following properties:
+// name
+// age
+// course
+// city
+// Print the complete object.
+// let student = {
+//     name: "john",
+//     age: 20,
+//     course: "computer science",
+//     city: "new york"
+// };
+// console.log(student);
+
+//2 Access the name property of the student object.
+// let student = {
+//     name: "john",
+//     age: 20,
+//     course: "computer science",
+//     city: "new york"
+// };
+// console.log(student.name);
+// console.log(student.city);
+// console.log(student["name"]);
+// console.log(student["city"])
+
+//3 update the student age
+// let student = {
+//     name: "john",
+//     age: 20,
+//     course: "computer science",
+//     city: "new york"
+// };
+// student.name = "preeti";
+// student.age = 21;
+// console.log(student.name);
+// console.log(student.age);
+
+//4 add a new property called email
+// let student = {
+//     name: "john",
+//     age: 20,
+//     course: "computer science",
+//     city: "new york"
+// };
+// student.email = "google@gmail.com";
+// console.log(student.email);
+
+//5 delete the city property
+// let student = {
+//     name: "john",
+//     age: 20,
+//     course: "computer science",
+//     city: "new york"
+// };
+// delete student.city;
+// console.log(student.city);
+
+//6 check whether the object contains the property course.
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+
+// console.log("course" in student);
+
+//7
+// Create a student object
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+
+// // Loop through all properties
+// for (let key in student) 
+// {
+//     console.log(key);
+// }
+
+//8 
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// let count = Object.keys(student).length;
+// console.log(count);
+
+//9
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// console.log(Object.values(student));
+
+//10
+// let student = {
+//     name: "preeti",
+//     age: 24,
+//     city: "delhi"
+// };
+// for (let [key, value] of Object.entries(student)) {
+//     console.log(key + ": " + value);
+// }
+
+//11
+// let mobile = {
+//     brand: "Samsung",
+//     model: "Galaxy S21",
+//     price: 799,
+//     color: "Phantom Gray"
+// };
+// mobile.price = mobile.price + (mobile.price * 10 / 100);
+// console.log(mobile);
+
+//12
+// let employee = {
+//     name: "John",
+//    address: {
+//         street: "123 Main St",
+//         city: "New York",
+//         state: "NY",
+//         zip: "10001"
+//     },
+//     position: "Software Engineer",
+//     salary: 80000
+
+// };
+// console.log(employee.address.city);
+// console.log(employee.address.state);
+
+//13
+// let student = {
+//     name: "Robin",
+//     subjects: ["Math", "English", "Science"]
+// };
+// for (let subject of student.subjects) {
+//     console.log(subject);
+// }
+
+//14
+// let employee = {
+//     name: "John",
+//     age : 44,
+// };
+// let address = {
+//     street: "123 Main St",
+// };
+//  let str = {
+//     ...employee, ...address
+//  };
+//  console.log(str);
+
+//15
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+
+// let cloneobject = {
+//     ...student
+// };
+// cloneobject.age = 21;
+
+// console.log(student);
+// console.log(cloneobject);
+
+//16
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// Object.freeze(student);
+// student.age = 21;
+// console.log(student);
+
+//17
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// Object.seal(student);
+// student.age = 21;
+// student.country = "India";
+// delete student.age;
+// console.log(student);
+
+//18
+// let student = {
+//     name: "Robin", 
+//     age: 20,
+//     city: "Delhi",
+// };
+// Object.preventExtensions(student);
+// student.age = 21;
+// student.country = "India";
+// delete student.city;
+// student.name = "preeti";
+// console.log(student);
+
+//19
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// console.log(Object.isFrozen(student));
+// console.log(Object.isSealed(student));
+// console.log(Object.isExtensible(student));
+
+//20
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// Object.assign(student, { country: "India", course: "Computer Science" });
+// console.log(student);
+
+//21
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// let { name, age, city } = student;
+// console.log(name);
+// console.log(age);
+// console.log(city);
+
+//22
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// let { name: studentName,
+//      age: studentAge,
+//       city: studentCity 
+//     } = student;
+// console.log(studentName);
+// console.log(studentAge);
+// console.log(studentCity);
+
+//23
+// let employee = {
+//     name: "John",
+//     age: 30,
+//     position: "Software Engineer",
+//     address: {
+//         street: "123 Main St",
+//         city: "New York",
+//         state: "NY",
+//         zip: "10001"
+//     }
+// };
+// let {
+//     address: { city, state }
+// } = employee;
+// console.log(city);
+// console.log(state);
+
+//24
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// let { name, age,city, country = "India" } = student;
+// console.log(name);
+// console.log(age);
+// console.log(city);
+// console.log(country);
+
+//25
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// let result = Object.entries(student);
+// for (let item of result){
+//     console.log(item);
+// }
+
+//26
+// let student = [
+//     ["name", "Robin"],
+//     ["age", 21],
+//     ["city", "Delhi"]
+// ];
+// let result = Object.fromEntries(student);
+
+// console.log(result);
+
+//27
+// let student = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi"
+// };
+// let result = Object.keys(student).sort();
+// console.log(result);
+
+//28
+// function countproperties(obj) {
+//     console.log("Number of Keys:", Object.keys(obj).length);
+//     console.log("Number of values:", Object.values(obj).length);
+// }
+// let student = {
+//     name: "Robin",  
+//     age: 20,    
+//     city: "Delhi"
+// };
+// countproperties(student);
+
+//29
+// let person = {
+//     name: "Robin",
+//     age: 20,
+//     city: "Delhi",
+//     greet: function() {
+//         console.log("hello");
+//     },
+//     introduce: function() {
+//         console.log("my name is " + this.name);
+//     }
+// };
+// person.greet();
+// person.introduce();
+
+//30
+// let library = {
+//     books: [
+//         {
+//             title: "JavaScript Basics",
+//             author: "John",
+//             price: 500,
+//             available: true
+//         },
+//         {
+//             title: "React Guide",
+//             author: "David",
+//             price: 700,
+//             available: false
+//         }
+//     ]
+// };
+
+// // 1. Add a new book
+// library.books.push({
+//     title: "Node.js",
+//     author: "Mike",
+//     price: 600,
+//     available: true
+// });
+
+// // 2. Delete a book (React Guide)
+// library.books.splice(1, 1);
+
+// // 3. Update book price
+// library.books[0].price = 550;
+
+// // 4. Print all books
+// console.log("All Books:");
+// console.log(library.books);
+
+// // 5. Find available books
+// console.log("Available Books:");
+// let availableBooks = library.books.filter(function(book) {
+//     return book.available;
+// });
+// console.log(availableBooks);
+
+// // 6. Count total books
+// console.log("Total Books:", library.books.length);
+
+// // 7. Convert first book into key-value pairs
+// console.log("First Book Entries:");
+// console.log(Object.entries(library.books[0]));
+
+// // 8. Clone the library
+// let clonedLibrary = {
+//     ...library
+// };
+
+// console.log("Cloned Library:");
+// console.log(clonedLibrary);
+
+// // 9. Freeze one book object
+// Object.freeze(library.books[0]);
+
+// // Try changing the price
+// library.books[0].price = 1000;
+
+// console.log("After Freeze:");
+// console.log(library.books[0]);
+
+// // 10. Merge another library
+// let anotherLibrary = {
+//     location: "Delhi"
+// };
+
+// let mergedLibrary = {
+//     ...library,
+//     ...anotherLibrary
+// };
+
+// console.log("Merged Library:");
+// console.log(mergedLibrary);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
