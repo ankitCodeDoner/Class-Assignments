@@ -1,0 +1,256 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "dm sans", sans-serif;
+    margin: 0;
+    background-color: #f6f2f2;
+}
+section{
+   max-width: 1440px;
+   background-color: #f8f4f4;
+}
+
+.section1{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://websitedemos.net/love-nature-02/wp-content/uploads/sites/988/2022/01/header-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+.container {
+    max-width: 1200px;
+    min-height: 655px;
+    margin: 0 auto;
+    padding: 20px;
+} 
+.content {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    color: #ffffff;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.lio{
+    text-align: center;
+    margin-top: 120px;
+}
+.btnx{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 58px;
+    background-color: #eab830;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #556b3d;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container2{
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-top: 50px;
+    gap: 30px;
+}
+.section3{
+    width: 100%;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 100px 20;
+}
+.container3 img:first-child{
+    width: 50px;
+    margin-bottom: 20px;
+}
+.container3 h2{
+    width: 800px;
+    margin: 20px auto;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.45;
+    color: #444;
+}
+.container3 img{
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.container3 p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #444;
+}
+.section4{
+    padding: 100px 0;
+    background: #fff;
+
+}
+.container4{
+    
+    max-width: 1200px;
+    margin: 0 150px;
+    
+}
+.content2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.left{
+    width: 600px;
+}
+.right{
+    width: 35%;
+    text-align: right;
+}
+.right img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+.left h2{
+     font-size: 35px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #556b3d;
+    margin-bottom: 35px;
+    font-family: Georgia, serif;
+}
+.left p{
+   font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: lighter;
+    color: #556b3d;
+    margin-bottom: 50px;
+}
+.btn4{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 58px;
+    border: 1px solid #556b3d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #556b3d;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.section5{
+max-width: 1440px;
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+    background: url("https://websitedemos.net/love-nature-02/wp-content/uploads/sites/988/2021/11/footer-hero-big.jpg") center center/cover no-repeat;
+}
+.content3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.content3 h2{
+    font-size: 58px;
+    color: #747525;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+.content3 p{
+    font-size: 20px;
+    color: #747525;
+    margin-bottom: 45px;
+    width: 620px;
+    line-height: 1.8;
+}
+.btn5{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 58px;
+    background-color: #eab830;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #556b3d;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    background: #ffffff;
+    padding: 90px 0;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.footer-menu{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: #556b3d;
+    font-size: 16px;
+    font-weight: 400;
+}   
+.footer-logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+}
+.footer-right p{
+    font-size: 16px;
+    color: #556b3d;
+    margin: 0;
+}
