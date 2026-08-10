@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+}
+
+.sec1 {
+    background:
+        linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3)),
+        url(https://websitedemos.net/love-nature-02/wp-content/uploads/sites/988/2021/11/header-hero-1.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    height: 420px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #00000028;
+}
+.side-btn {
+    position: fixed;
+    font-size: 14px;
+    top: 250px;
+    right: 0;
+    padding: 15px 15px;
+    box-shadow: 0 0px 1px 0px #757575;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+}
+
+.hero-text {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 76px;
+    font-weight: 400;
+}
+
+.sec2 {
+    width: 100%;
+    height: 1070px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.container2 {
+    width: 1044px;
+    height: 1070px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.heading {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 85px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.heading h2 {
+    margin: 0px;
+    padding: 0;
+    color: #405b32;
+    font-family: 'Forum', serif;
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 44px;
+    letter-spacing: -2px;
+}
+
+.image-div {
+    width: 1044px;
+    height: 535px;
+    margin-top: 55px;
+    overflow: hidden;
+}
+
+.nature-image {
+    display: block;
+    width: 1044px;
+    height: 535px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.info {
+    width: 1044px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+}
+
+.column2 {
+    width: 50%;
+    text-align: center;
+    font-family: 'DMsans', sans-serif;
+}
+
+.column2 h3 {
+    margin: 0 0 12px 0;
+    color: #526b40;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.column2 p {
+    margin: 0 auto;
+    max-width: 522px;
+    color: #777777;
+    font-size: 16px;
+    line-height: 1.7;
+
+}
+
+.bottom-space {
+    height: 100px;
+}
+
+.sec3 {
+    max-width: 1440px;
+    width: 100%;
+    height: 411px;
+    margin: 0 auto;
+    background: #f5f7f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, serif;
+}
+
+.container3 {
+    width: 1140px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-icon {
+    width: 37px;
+    height: 30px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.p-text {
+    width: 760px;
+    font-size: 35px;
+    color: #536942;
+    font-family: 'Forum', serif;
+    margin-bottom: 40px;
+    line-height: 43px;
+    letter-spacing: -2px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    height: 110px;
+    margin: 0 auto;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #56663f;
+    font-size: 16px;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.footer-text {
+    color: #56663f;
+    font-size: 18px;
+}

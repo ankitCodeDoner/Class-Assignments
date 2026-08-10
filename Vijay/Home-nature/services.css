@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+}
+
+.sec1 {
+    background:
+        linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3)),
+        url(https://websitedemos.net/love-nature-02/wp-content/uploads/sites/988/2025/06/ales-krivec-N-aTikX-b00-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    height: 420px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #00000028;
+}
+
+.side-btn {
+    position: fixed;
+    font-size: 14px;
+    top: 250px;
+    right: 0;
+    padding: 15px 15px;
+    box-shadow: 0 0px 1px 0px #757575;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+}
+
+.hero-text {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 76px;
+    font-weight: 400;
+}
+
+.sec2 {
+    width: 100%;
+    padding: 90px 0 90px;
+}
+
+.container2 {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+.image {
+    width: 370px;
+    height: 500px;
+    flex: 0 0 370px;
+    overflow: hidden;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content2 {
+    width: 500px;
+    padding: 0 0 4px;
+}
+
+.content2 h2 {
+    margin: 0 0 20px;
+    font-family: 'forum', serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #56664f;
+}
+
+.content2 p {
+    width: 480px;
+    margin: 0 0 22px;
+    color: #6e756cbf;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: 0.2px;
+}
+
+.price {
+    margin: 2px 0 24px;
+    font-size: 23px;
+    line-height: 1.9;
+    color: #56664f;
+}
+
+.button2 {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #536942;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #536942c3;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.button2:hover {
+    background: #f5f7f3;
+}
+
+.sec3 {
+    width: 100%;
+    height: 494px;
+    background: #f3f6f2;
+    overflow: hidden;
+}
+
+.container3 {
+    width: 1145px;
+    height: 494px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    width: 687px;
+}
+
+.title {
+    width: 100%;
+    margin: 0 0 39px 0;
+    color: #536f57;
+    font-family:'forum', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+.text {
+    width: 100%;
+    margin: 0 0 35px 0;
+    color: #617067ba;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.right {
+    width: 460px;
+    height: 320px;
+    padding-left: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.badge-circle {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 13px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #58765c;
+    font-size: 37px;
+}
+
+.badge-label {
+    color: #5e6b62;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    height: 110px;
+    margin: 0 auto;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #56663f;
+    font-size: 16px;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.footer-text {
+    color: #56663f;
+    font-size: 18px;
+}

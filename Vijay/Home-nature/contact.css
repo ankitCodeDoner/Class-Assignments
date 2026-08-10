@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+}
+
+.sec1 {
+    background:
+        linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3)),
+        url(https://websitedemos.net/love-nature-02/wp-content/uploads/sites/988/2021/11/contact-hero-1.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    height: 420px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #00000028;
+}
+.side-btn {
+    position: fixed;
+    font-size: 14px;
+    top: 250px;
+    right: 0;
+    padding: 15px 15px;
+    box-shadow: 0 0px 1px 0px #757575;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+.hero-text {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 76px;
+    font-weight: 400;
+}
+
+.sec2 {
+    width: 100%;
+    height: 711px;
+    min-height: 711px;
+    max-height: 711px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+.container2 {
+    position: relative;
+    width: 1140px;
+    height: 711px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.content2 {
+    position: absolute;
+    width: 1140px;
+    padding: 120px 0;
+    display: grid;
+    grid-template-columns: 470px 520px;
+    column-gap: 114px;
+    align-items: start;
+}
+
+.left h2,
+.right h2 {
+    margin: 0 0 35px 0;
+    padding: 0;
+    font-family: 'forum', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -2px;
+    color: #536941;
+}
+
+.left {
+    width: 470px;
+    padding: 0 40px;
+    height: 481px;
+}
+
+.detail {
+    margin: 0 0 34px 0;
+    padding: 0;
+    font-family: 'DMsans' sans-serif;
+    line-height: 1.8;
+}
+
+.detail span {
+    display: block;
+    margin: 0 0 7px 0;
+    font-size: 14px;
+    color: #989898bf;
+}
+
+.detail p {
+    margin: 0;
+    font-size: 18px;
+    color: #536941;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 27px;
+}
+
+.social-icons a {
+    width: 46.2px;
+    height: 46.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #536941;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.right {
+    width: 520px;
+    height: 481px;
+}
+
+.right form {
+    width: 520px;
+    height: 389px;
+    margin: 0;
+
+}
+
+.right input {
+    display: block;
+    width: 520px;
+    height: 44px;
+    margin: 0 0 40px 0;
+    padding: 0 10px;
+    border: 1px solid #b8b8b8c9;
+    border-radius: 3px;
+    background: #f3f3f34d;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #536941;
+}
+
+.right textarea {
+    display: block;
+    width: 520px;
+    height: 129px;
+    margin: 0 0 39px 0;
+    padding: 10px;
+    border: 1px solid #b8b8b8c9;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f3f34d;
+    outline: none;
+    font-size: 18px;
+    color: #536941;
+}
+
+.right input::placeholder,
+.right textarea::placeholder {
+    color: #b5bbb4;
+    opacity: 1;
+    font-size: 16px;
+}
+
+.right button {
+    width: 137px;
+    height: 45px;
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 3px;
+    background: #ffd12f;
+    color: #536941;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.sec3 {
+    position: relative;
+    width: 100%;
+    height: 573px;
+    min-height: 573px;
+    max-height: 573px;
+    background: #f5f7f3;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container3 {
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+
+.container3 h2 {
+    text-align: center;
+    font-family: 'forum', sans-serif;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    font-weight: 400;
+    padding: 20px;
+    color: #52705c;
+}
+
+.grid {
+    width: 748px;
+    height: 174px;
+    margin: 31px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 265px;
+    height: 260px;
+    overflow: hidden;
+    background: #ddd;
+
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    height: 110px;
+    margin: 0 auto;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #56663f;
+    font-size: 16px;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.footer-text {
+    color: #56663f;
+    font-size: 18px;
+}
